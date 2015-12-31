@@ -49,4 +49,4 @@ This is where you would write the program's code
  
 This ends the program in most cases
 
-*In the next tutorial, we'll be learning about how information is stored on your calculator.*
+*In the next tutorial, we'll be learning about how numbers work on your calculator.*
