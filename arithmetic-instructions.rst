@@ -37,13 +37,13 @@ ADC
 ================  ==========================================  ==========================================
 Register/Flag     8 Bit
 ================  ==========================================  ==========================================
-M                 
-S                
-Z
-HL
-P/V
-N
-C          
+M                 Set to the result of ``M + N + Carry``
+S                 Set if the result is negative; else reset
+Z                 Set if the result is 0; else reset
+HL                Set if carry from bit 3; else reset	
+P/V               Set if overflow; else reset
+N                 Reset
+C                 Set if carry from bit 7; else reset	
 ================  ==========================================  ==========================================
 
 **Allowed Instructions**
