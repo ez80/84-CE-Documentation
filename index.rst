@@ -22,5 +22,6 @@ Contents:
   :maxdepth: 2
   :caption: Instruction Set
   
+  arithmetic-instructions
   is-adc
   is-add
