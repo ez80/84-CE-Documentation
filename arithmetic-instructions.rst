@@ -7,3 +7,5 @@ Arithmetic Instructions
   
   is-adc
   is-add
+  is-cp
+  is-daa
