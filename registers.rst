@@ -12,13 +12,14 @@ Recall from the last tutorial bits and bytes? H is a 1 byte register, or 8 bits,
   ld destination,source 
   
 What does this code do? It puts the value of source into the given destination.
-We can use registers as arguments for this command: 
+We can use registers as arguments for this instruction: 
 
 .. code-block:: asm
  
   ld hl,de 
   
 Puts the content of DE inside HL.
+
 
 We can also use numbers:
 
@@ -28,6 +29,7 @@ We can also use numbers:
 
 Puts 7 into HL.  
 
+
 Remember the size of the registers you are using:
 
 .. code-block:: asm
@@ -35,6 +37,7 @@ Remember the size of the registers you are using:
   ld hl,a
 
 This is a valid instruction, it puts A into HL
+  
   
 .. code-block:: asm
  
