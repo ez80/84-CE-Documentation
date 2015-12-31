@@ -72,6 +72,7 @@ Indirection tells you whether or not you are using the number as an address, or 
 How does the program know whether you are talking about byte 193 or the actual number 192? The parenthesis tell the program to use the number as an address.
 
 .. code-block:: asm
+
   ld hl,133212 ;let's put 133212 inside hl. Note, there are no parenthesis, so we're talking about the number 133212, and not byte 133213.
   ld a,2 ;also no parenthesis, we mean 2
   ld (hl),a ;we can decide later to use it as an address, by putting the parenthesis around it. Now we are putting the value of A, 2, inside the address stored in hl.
@@ -79,6 +80,7 @@ How does the program know whether you are talking about byte 193 or the actual n
 Don't worry if you don't immediately get it, it will come to you eventually. Now it's your turn to try
 
 .. code-block:: asm
+
   ld de,($133215)
   ld ($132918),de
   
