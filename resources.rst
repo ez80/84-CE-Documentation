@@ -1,5 +1,9 @@
-Downloads
+Resources
 *************************************************
+
+Advanced tutorials
+-------------------------------------------------
+Documentation: `CE Programming <http://ce-programming.github.io/documentation/>`_
 
 Notepad++
 -------------------------------------------------
