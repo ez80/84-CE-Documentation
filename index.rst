@@ -17,7 +17,7 @@ Contents:
   numbers
   registers
   resources
-  instruction-set
+  instruction-set/some-opcode.rst
   
 Indices and tables
 ==================
