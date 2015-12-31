@@ -20,35 +20,23 @@ ADC
 	Storing the state of the carry flag in either ``A`` or ``HL``  with ``adc a,0`` or ``ld bc/de,0 \ adc hl,bc/de``. Can be useful otherwise in very specific situations.
 
 **Results**
- 
- ================	==========================================	==========================================	========================================
- ================	==========================================	==========================================	========================================
- Register/Flag		8-bit										16-bit (non-ADL)							24-bit (ADL)
- ``M``				Set to the result of ``M + N + Carry``
- ``S`` flag			Set if the result is negative; else reset
- ``Z`` flag			Set if the result is 0; else reset
- ``H`` flag			Set if carry from bit 3; else reset			Set if carry from bit 11; else reset
- ``P/V`` flag		Set if overflow; else reset
- ``N`` flag			Reset
- ``C`` flag			Set if carry from bit 7; else reset			Set if carry from bit 15; else reset		Set if carry from bit 23; else reset
- ================	==========================================	==========================================	========================================
- 
- 
-================  ==========================================  ==========================================
-Register/Flag     8 Bit
-================  ==========================================  ==========================================
-M                 Set to the result of ``M + N + Carry``
-S                 Set if the result is negative; else reset
-Z                 Set if the result is 0; else reset
-HL                Set if carry from bit 3; else reset	
-P/V               Set if overflow; else reset
-N                 Reset
-C                 Set if carry from bit 7; else reset	
-================  ==========================================  ==========================================
+
+================  ==========================================  ==========================================  ========================================
+Register/Flag     8 Bit                                       16-bit (non-ADL)	                          24-bit (ADL)
+================  ==========================================  ==========================================  ========================================
+M                 Set to the result of ``M + N + Carry``                                                 
+S                 Set if the result is negative; else reset                                              
+Z                 Set if the result is 0; else reset                                                     
+HL                Set if carry from bit 3; else reset	      Set if carry from bit 11; else reset       
+P/V               Set if overflow; else reset                                                            
+N                 Reset                                                                                  
+C                 Set if carry from bit 7; else reset	      Set if carry from bit 15; else reset	      Set if carry from bit 23; else reset
+================  ==========================================  ==========================================  ========================================
 
 **Allowed Instructions**
 ================	================	==================	==================	==================
 Instruction			Opcode				CC (ADL/non-ADL)	CC (.S)				CC (.L)
+================	================	==================	==================	==================
 adc a,a				$8F					1F					X					X
 adc a,b				$88					1F					X					X
 adc a,c				$89					1F					X					X
