@@ -9,7 +9,9 @@ ADC
 	| ``M += N + Carry``
 
 **Uses**
-	Storing the state of the carry flag in either ``A`` or ``HL``  with ``adc a,0`` or ``ld bc/de,0 \ adc hl,bc/de``. Can be useful otherwise in very specific situations.
+	- Storing the state of the carry flag in either ``A`` or ``HL``  with ``adc a,0`` or ``ld bc/de,0 \ adc hl,bc/de``
+	- 16 bit addition which checks if the result is zero (see Notes)
+	- Can be useful otherwise in very specific situations
 
 **Results**
 	================    ==========================================  ==========================================  ========================================
@@ -52,6 +54,10 @@ ADC
 	adc hl,hl         $ED, $6A          2F                  3F                  3F
 	adc hl,sp         $ED, $7A          2F                  3F                  3F
 	================  ================  ==================  ==================  ==================
+
+**Notes**
+	- Unlike `ADD </en/latest/is-add.html>`_, this instruction **does not** support using the index registers IX and IY as the first operand.
+	- Unlike `ADD </en/latest/is-add.html>`_, this instruction **does** modify the ``Z`` flag when doing 16-bit and 24-bit addition.
 
 **See Also**
 	`ADD </en/latest/is-add.html>`_, `SBC </en/latest/is-sbc.html>`_, `SUB </en/latest/is-sub.html>`_
