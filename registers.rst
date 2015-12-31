@@ -43,9 +43,46 @@ Remember the size of the registers you are using:
 
 This not a valid instruction, as both arguments have to be 8 bit registers.
 
+Addresses
+______________
+
+To fully understand what indirection is, we have to know what an address is. An address is something that you use to know where another thing is located. Each byte is +1 address number, so since your computer starts counting with 0, byte 193 is actually address $192.
+
+You can use addresses in place of registers with the LD instruction
+
+.. code-block:: asm
+ 
+  ld hl,($133212)
+  
+This will put whatever is inside address 133212, or byte 133213, and the 2 bytes after that, inside the hl register pair.
+
+But why do we have parenthesis around the address? This is something called indirection.
+
 Indirection
 ______________
 
 *Note: Indirection is slightly hard to grasp for newcomers, and we'll touch more on this later, so just do your best*
 
+Indirection tells you whether or not you are using the number as an address, or just as a number. Here the example from above:
 
+.. code-block:: asm
+ 
+  ld hl,($133212)
+
+How does the program know whether you are talking about byte 193 or the actual number 192? The parenthesis tell the program to use the number as an address.
+
+.. code-block:: asm
+  ld hl,133212 ;let's put 133212 inside hl. Note, there are no parenthesis, so we're talking about the number 133212, and not byte 133213.
+  ld a,2 ;also no parenthesis, we mean 2
+  ld (hl),a ;we can decide later to use it as an address, by putting the parenthesis around it. Now we are putting the value of A, 2, inside the address stored in hl.
+  
+Don't worry if you don't immediately get it, it will come to you eventually. Now it's your turn to try
+
+.. code-block:: asm
+  ld de,($133215)
+  ld ($132918),de
+  
+If you know what's happening here, good for you! If you don't, it's ok. You'll get it later.
+
+*In the next tutorial, we'll learn about...?
+  
