@@ -9,17 +9,17 @@ Arithmetic Instructions
 ADC
 --------
 
-:ADC M,N:
+**ADC M,N**
 	Add with carry
 
-:Description:
+**Description**
 	Adds ``M``, ``N``, and the carry flag (+0 or +1) and stores the result in ``M``.
 	``M += N + Carry``
 
-:Uses:
+**Uses**
 	Storing the state of the carry flag in either ``A`` or ``HL``  with ``adc a,0`` or ``ld bc/de,0 \ adc hl,bc/de``. Can be useful otherwise in very specific situations.
 
-:Results:
+**Results**
 	================	==========================================	==========================================	========================================
 	Register/Flag		8-bit										16-bit (non-ADL)							24-bit (ADL)
 	``M``				Set to the result of ``M + N + Carry``
@@ -35,7 +35,7 @@ ADC
 	``C`` flag			Set if carry from bit 7; else reset			Set if carry from bit 15; else reset		Set if carry from bit 23; else reset
 	================	==========================================	==========================================	========================================
 
-:Allowed Instructions:
+**Allowed Instructions**
 	================	================	==================	==================	==================
 	Instruction			Opcode				CC (ADL/non-ADL)	CC (.S)				CC (.L)
 	adc a,a				$8F					1F					X					X
@@ -59,7 +59,7 @@ ADC
 	adc hl,sp			$ED, $7A			2F					3F					3F
 	================	================	==================	==================	==================
 
-:See Also:
+**See Also**
 	ADD, SBC, SUB
 
 
