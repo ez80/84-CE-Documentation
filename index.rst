@@ -14,7 +14,7 @@ Contents:
   introtoassembly
   asmbasics
   storage
-  downloads
+  resources
   
 Indices and tables
 ==================
