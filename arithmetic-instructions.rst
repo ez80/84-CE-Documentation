@@ -13,8 +13,8 @@ ADC
 	Add with carry
 
 **Description**
-	Adds ``M``, ``N``, and the carry flag (+0 or +1) and stores the result in ``M``.
-	``M += N + Carry``
+	| Adds ``M``, ``N``, and the carry flag (+0 or +1) and stores the result in ``M``.
+	| ``M += N + Carry``
 
 **Uses**
 	Storing the state of the carry flag in either ``A`` or ``HL``  with ``adc a,0`` or ``ld bc/de,0 \ adc hl,bc/de``. Can be useful otherwise in very specific situations.
