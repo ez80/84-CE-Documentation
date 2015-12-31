@@ -10,7 +10,8 @@ Contents:
 
 .. toctree::
   :maxdepth: 2
-  :caption: Tutorials #
+  :caption: Tutorials
+  
   introtoassembly
   asmbasics
   registers
