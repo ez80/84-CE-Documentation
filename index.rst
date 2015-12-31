@@ -10,11 +10,11 @@ Contents:
 
 .. toctree::
   :maxdepth: 2
-  
-  introtoassembly
-  asmbasics
-  registers
-  resources
+  Beginner
+   introtoassembly
+   asmbasics
+   registers
+   resources
   
 Indices and tables
 ==================
