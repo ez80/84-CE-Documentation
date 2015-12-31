@@ -8,6 +8,7 @@ There are many registers you can use in assembly. The ones we will be covering t
 Recall from the last tutorial bits and bytes? H is a 1 byte register, or 8 bits, while HL is a 2 byte register, or 16 bits. Now that we know about registers, it's time we learn our first instruction!
 
 .. code-block:: asm
+ 
   ld destination,source 
   
 What does this code do? It puts the value of source into the given destination.
