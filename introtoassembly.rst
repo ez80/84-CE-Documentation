@@ -1,6 +1,6 @@
 Introduction to Assembly
 ********************************
-You want more games for the CE? Let's learn how to make them ourselves!
+You want more games your shiny new TI-84+CE? Why don't you make them yourself?
 
 What is assembly?
 =================================================
