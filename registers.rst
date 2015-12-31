@@ -46,13 +46,14 @@ This not a valid instruction, as both arguments have to be 8 bit registers.
 Addresses
 ______________
 
-To fully understand what indirection is, we have to know what an address is. An address is something that you use to know where another thing is located. Each byte is +1 address number, so since your computer starts counting with 0, byte 193 is actually address $192.
+To fully understand what indirection is, we have to know what an address is. An address is a number that corresponds to a specific byte in RAM.
+Add one to the address and you go forward a byte; subtract one and you go backward a byte.
 
 You can use addresses in place of registers with the LD instruction
 
 .. code-block:: asm
  
-  ld hl,($133212)
+  ld hl,(133212)
   
 This will put whatever is inside address 133212, or byte 133213, and the 2 bytes after that, inside the hl register pair.
 
@@ -67,9 +68,9 @@ Indirection tells you whether or not you are using the number as an address, or 
 
 .. code-block:: asm
  
-  ld hl,($133212)
+  ld hl,(133212)
 
-How does the program know whether you are talking about byte 193 or the actual number 192? The parenthesis tell the program to use the number as an address.
+How does the program know whether you are talking about byte 133213 or the actual number 133212? The parenthesis tell the program to use the number as an address.
 
 .. code-block:: asm
 
@@ -81,8 +82,8 @@ Don't worry if you don't immediately get it, it will come to you eventually. Now
 
 .. code-block:: asm
 
-  ld de,($133215)
-  ld ($132918),de
+  ld de,(133215)
+  ld (132918),de
   
 If you know what's happening here, good for you! If you don't, it's ok. You'll get it later.
 
