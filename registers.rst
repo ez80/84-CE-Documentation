@@ -1,6 +1,9 @@
 Registers and Indirection
 ********************************
 
+The Registers
+______________
+
 If you've ever programmed in a different language, you've used something called variables to store your data temporarily. In assembly, we use registers.
 
 There are many registers you can use in assembly. The ones we will be covering today are: A, B, C, D, E, F, H, and L, which can be paired together to form AF, BC, DE, and HL. As you probably have guessed, when a register is paired with another it can hold more information.
@@ -39,3 +42,10 @@ Remember the size of the registers you are using:
   ld hl,a
 
 This not a valid instruction, as both arguments have to be 8 bit registers.
+
+Indirection
+______________
+
+*Note: Indirection is slightly hard to grasp for newcomers, and we'll touch more on this later, so just do your best*
+
+
