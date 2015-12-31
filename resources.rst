@@ -5,6 +5,8 @@ Advanced tutorials
 -------------------------------------------------
 Documentation: `CE Programming <http://ce-programming.github.io/documentation/>`_
 
+ASM In 28 Days: `TI 83+ Assembly Tutorial <http://media.taricorp.net/83pa28d/welcome.html>`_
+
 Notepad++
 -------------------------------------------------
 Download Here: `Notepad++ <https://notepad-plus-plus.org/download/>`_
