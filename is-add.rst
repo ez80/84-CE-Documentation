@@ -2,4 +2,4 @@ ADD
 --------
 
 **See Also**
-	`ADC </is-adc>`_, SBC, SUB
+	`ADC </en/latest/is-adc>`_, SBC, SUB
