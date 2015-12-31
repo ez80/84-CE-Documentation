@@ -13,7 +13,7 @@ Contents:
   
   introtoassembly
   asmbasics
-  storage
+  registers
   resources
   
 Indices and tables
