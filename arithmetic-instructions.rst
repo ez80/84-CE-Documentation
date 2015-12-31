@@ -33,6 +33,16 @@ ADC
  ``C`` flag			Set if carry from bit 7; else reset			Set if carry from bit 15; else reset		Set if carry from bit 23; else reset
  ================	==========================================	==========================================	========================================
  
+ 
+=====  =====  =======
+A      B      A and B
+=====  =====  =======
+False  False  False
+True   False  False
+False  True   False
+True   True   True
+=====  =====  =======
+
 **Allowed Instructions**
 ================	================	==================	==================	==================
 Instruction			Opcode				CC (ADL/non-ADL)	CC (.S)				CC (.L)
