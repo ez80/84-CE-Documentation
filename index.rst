@@ -17,6 +17,7 @@ Contents:
   numbers
   registers
   resources
+  instruction-set
   
 Indices and tables
 ==================
