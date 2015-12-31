@@ -14,6 +14,7 @@ Contents:
   
   introtoassembly
   asmbasics
+  numbers
   registers
   resources
   
