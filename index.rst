@@ -17,7 +17,12 @@ Contents:
   numbers
   registers
   resources
-  instruction-set/some-opcode.rst
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Instruction Set
+  
+  arithmetic-instructions
   
 Indices and tables
 ==================
