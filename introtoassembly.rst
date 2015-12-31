@@ -35,7 +35,7 @@ TI 84+CE Include File
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 This file tells your program and the compiler where things are located on your calculator.
 
-Download Here: `ti84pce.inc <downloads/ti84pce.inc>`_
+Download Here: `ti84pce.inc <http://wikiti.brandonw.net/index.php?title=84PCE:OS:Include_File>`_
 
 Setting up the compiler
 --------------------------------------------------

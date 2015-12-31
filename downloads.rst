@@ -15,4 +15,4 @@ Download Here: `TI Connect CE <https://education.ti.com/en/us/software/details/e
 
 TI 84+CE Include File
 -------------------------------------------------
-Download Here: `ti84pce.inc <downloads/ti84pce.inc>`_
+Download Here: `ti84pce.inc <http://wikiti.brandonw.net/index.php?title=84PCE:OS:Include_File>`_
