@@ -22,10 +22,5 @@ Contents:
   :maxdepth: 2
   :caption: Instruction Set
   
-  arithmetic-instructions
-  
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`search`
+  is-adc
+  is-add
