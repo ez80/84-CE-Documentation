@@ -247,7 +247,7 @@ Place   32's    16's    8's     4's     2's     1's
 Digit   0       1       ?       ?       ?       ?    
 ======  ======  ======  ======  ======  ======  ======
 
-* (14*16
+(14*16
 :sup:`0`
 )
 
@@ -262,7 +262,7 @@ Digit   0       1       1       1       1       0
 ========  ============  ======  
 Decimal   Hexadecimal   Binary    
 ========  ============  ====== 
-30         $1E          011110
+30        $1E           011110
 ========  ============  ======  
 
 Oh, and one last thing, now that we have learned to convert between these three systems ourselves, here is a cheatsheet:
