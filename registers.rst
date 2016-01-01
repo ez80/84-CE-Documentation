@@ -55,7 +55,7 @@ You can use addresses in place of registers with the LD instruction
  
   ld hl,(133212)
   
-This will put whatever is inside address 133212, or byte 133213, and the 2 bytes after that, inside the hl register pair.
+This will put whatever is inside address 133212, the 133213th byte, and the 2 bytes after that (hl is 3 bytes), inside the hl register pair.
 
 But why do we have parenthesis around the address? This is something called indirection.
 
@@ -70,11 +70,11 @@ Indirection tells you whether or not you are using the number as an address, or 
  
   ld hl,(133212)
 
-How does the program know whether you are talking about byte 133213 or the actual number 133212? The parenthesis tell the program to use the number as an address.
+How does the program know whether you are talking about the 133213th byte or the actual number 133212? The parenthesis tell the program to use the number as an address.
 
 .. code-block:: asm
 
-  ld hl,133212 ;let's put 133212 inside hl. Note, there are no parenthesis, so we're talking about the number 133212, and not byte 133213.
+  ld hl,133212 ;let's put 133212 inside hl. Note, there are no parenthesis, so we're talking about the number 133212, and not the 133213th byte.
   ld a,2 ;also no parenthesis, we mean 2
   ld (hl),a ;we can decide later to use it as an address, by putting the parenthesis around it. Now we are putting the value of A, 2, inside the address stored in hl.
   
