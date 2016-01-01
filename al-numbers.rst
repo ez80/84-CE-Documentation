@@ -12,12 +12,6 @@ Decimal   Hexadecimal   Binary
 ?         ?             101011  
 ?         $1E           ?
 ========  ============  ======  
-
-========  ============  ======  
-Decimal   Hexadecimal   Binary    
-========  ============  ====== 
-10        ?             ?
-========  ============  ======
   
 Ok, so for the first problem, we need to convert 10 in decimal to hexadecimal. Let's make another chart.
 
