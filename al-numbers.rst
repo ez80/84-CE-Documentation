@@ -72,11 +72,12 @@ Decimal   Hexadecimal   Binary
 ========  ============  ======  
 
 Ok, so now for the next problem, we are given two values, and we need to solve for the binary form.
-========  ============  ======  
+
+========  ============  =======  
 Decimal   Hexadecimal   Binary    
-========  ============  ====== 
+========  ============  ======= 
 72        $48           ?       
-========  ============  ======  
+========  ============  =======  
 
 But which way is easiest to solve from? 
 
