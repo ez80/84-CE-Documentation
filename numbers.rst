@@ -2,7 +2,7 @@ Hex, Binary, and Decimal
 ********************************
 
 | **If you are already familiar with binary and hexadecimal, you may skip straight on to the next tutorial.**
-| **If you would prefer a video tutorial, you can use `this <http://youtu.be/jvx-NrILgpE>`_ instead. Just know that assembly programmers use the prefix ``$`` for hexadecimal and ``%`` for binary.**
+| If you would prefer a video tutorial, you can use `this <http://youtu.be/jvx-NrILgpE>`_ instead. Just know that assembly programmers use the prefix "$" for hexadecimal and "%" for binary.
 
 When we humans write numbers, we like to use base 10, also called decimal. Decimal is a number system in which there are ten digits (0-9). We can write any number from zero to nine using that digit.
 - 4
@@ -22,6 +22,7 @@ Humans may like base 10, but computers don't. Computers can't keep track of ten 
 In base 10, each digit is ten times as significant as the next. For example, a small change in the "hundreds" place makes a much bigger change in the value of a number than a change in the "tens" place, and likewise between the "tens" and "ones" places. In binary, each digit is twice as significant as the one after it. What do I mean by that? Well on the far left, there's the "ones" place as we would expect it. After that comes the "twos" place. And after that comes the "fours" place (2 * 2 = 4). And the "eights" (4 * 2 = 8), "sixteens" (8 * 2 = 16), "thirty-twos," and so on. It will really pay to memorize your powers of two at least up to 2^8, which is 256 (in decimal notation).
 
 So how can we use this information to go from a binary number to a decimal number? We make a chart!
+
 ======  ======  ======  ======  ======  ======  ======
 Place   32s     16s     8s      4s      2s      1s
 ======  ======  ======  ======  ======  ======  ======
