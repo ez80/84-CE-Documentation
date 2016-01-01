@@ -30,6 +30,7 @@ Decimal   Hexadecimal   Binary
 ========  ============  ======  
 
 Great! Now we need to convert 10 to binary.
+:raw-html:`<br />`
 How many 16's go into 10? Zero.
 
 ======  ======  ======  ======  ======  ======
@@ -96,6 +97,7 @@ Digit   1       0       0       1       0       0       0
 ======  ======  ======  ======  ======  ======  ======  ======
 
 8-8=0
+:raw-html:`<br />`
 1001000
 
 ========  ============  =======  
@@ -106,6 +108,8 @@ Decimal   Hexadecimal   Binary
 
 But what if we want to convert directly from hexadecimal to binary?
 
-$48 in hexadecimal = (4*16:sup:2)
+$48 in hexadecimal = (4*16
+:sup:`2`
+)
 
 `To the next tutorial! </en/latest/registers.html>`_ 
