@@ -21,9 +21,9 @@ Download Here: `Notepad++ <https://notepad-plus-plus.org/download/>`_
 
 A compiler
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-A compiler lets you take the code you have created and make it into a program that the TI-84 Plus CE can use! We recommend SPASM-NG when coding in eZ80.
+A compiler lets you take the code you have created and make it into a program that the TI-84 Plus CE can use! We recommend SPASM-ng when coding in eZ80.
 
-Download Here: `SpasmNG <https://github.com/alberthdev/spasm-ng/releases>`_
+Download Here: `Spasm-ng <https://github.com/alberthdev/spasm-ng/releases>`_
 
 A debugger/emulator or a TI-84+CE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

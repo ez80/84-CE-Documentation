@@ -68,4 +68,21 @@ Okay, so everything in computers is actually binary, which can be represented mo
 
 Finally, computers start counting with zeroes, so if I have two files, one would be labeled file 0, and the other file 1.
 
+Here are some practice problems to do:
+
+========  ============  ======  
+Decimal   Hexadecimal   Binary    
+========  ============  ====== 
+10        ?             ?
+72        $48           ?       
+?         ?             101011  
+?         $1E           ?
+========  ============  ======  
+
+If you can do all of these problems, you are ready to move on to the next tutorial.
+
+If you need more help, visit the additional learning page: `here </en/latest/al-numbers>`_ 
+
+We'll be using these concepts very frequently, so make sure you have mastered them before moving on to the next tutorial.
+
 *In the next tutorial, we'll be learning about how information is stored on your calculator.*
