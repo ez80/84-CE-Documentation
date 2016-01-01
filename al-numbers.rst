@@ -70,4 +70,42 @@ Decimal   Hexadecimal   Binary
 10        10            01010
 ========  ============  ======  
 
+Ok, so now for the next problem, we are given two values, and we need to solve for the binary form.
+========  ============  ======  
+Decimal   Hexadecimal   Binary    
+========  ============  ====== 
+72        $48           ?       
+========  ============  ======  
+
+But which way is easiest to solve from? 
+
+We can convert decimal to binary like so:
+
+======  ======  ======  ======  ======  ======  ======  ======
+Place    64's    32's    16's    8's     4's     2's     1's
+======  ======  ======  ======  ======  ======  ======  ======
+Digit   1       0       0       ?       ?       ?       ?  
+======  ======  ======  ======  ======  ======  ======  ======
+
+72-64= 8
+
+======  ======  ======  ======  ======  ======  ======  ======
+Place    64's    32's    16's    8's     4's     2's     1's
+======  ======  ======  ======  ======  ======  ======  ======
+Digit   1       0       0       1       0       0       0    
+======  ======  ======  ======  ======  ======  ======  ======
+
+8-8=0
+1001000
+
+========  ============  =======  
+Decimal   Hexadecimal   Binary    
+========  ============  ======= 
+72        $48           1001000      
+========  ============  =======  
+
+But what if we want to convert directly from hexadecimal to binary?
+
+$48 in hexadecimal = (4*16:sup:2)
+
 `To the next tutorial! </en/latest/registers.html>`_ 
