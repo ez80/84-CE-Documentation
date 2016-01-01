@@ -1,24 +1,24 @@
 Resources
 *************************************************
 
-Advanced tutorials
+More Tutorials
 -------------------------------------------------
-Documentation: `CE Programming <http://ce-programming.github.io/documentation/>`_
-
-ASM In 28 Days: `TI 83+ Assembly Tutorial <http://media.taricorp.net/83pa28d/welcome.html>`_
+| CE Programming Documentation: `TI 84+CE Assembly and C Tutorials <http://ce-programming.github.io/documentation/>`_
+| Learn Assembly In 28 Days: `TI 83+ Assembly Tutorial <http://media.taricorp.net/83pa28d/welcome.html>`_
 
 Notepad++
 -------------------------------------------------
-Download Here: `Notepad++ <https://notepad-plus-plus.org/download/>`_
+| Download Here: `Notepad++ <https://notepad-plus-plus.org/download/>`_
+| Syntax Highlighting: `Notepad++ eZ80 Syntax Highlighting <http://cemete.ch/p243171>`_
 
-SpasmNG
+SPASM-ng
 -------------------------------------------------
-Download Here: `SpasmNG <https://github.com/alberthdev/spasm-ng/releases>`_
+Download Here: `SPASM-ng <https://github.com/alberthdev/spasm-ng/releases>`_
 
 TI Connect CE
 -------------------------------------------------
 Download Here: `TI Connect CE <https://education.ti.com/en/us/software/details/en/CA9C74CAD02440A69FDC7189D7E1B6C2/swticonnectcesoftware>`_
 
-TI 84+CE Include File
+TI 84+CE Equates File
 -------------------------------------------------
 Download Here: `ti84pce.inc <http://wikiti.brandonw.net/index.php?title=84PCE:OS:Include_File>`_
