@@ -44,6 +44,7 @@ Hexadecimal, often abbreviated to hex, is precisely what the name suggests: base
 But wait! In decimal, we had ten digits. Binary had two. Hexadecimal needs... sixteen digits, right? How do we even write that? Well, we use letters. In Hexadecimal, when a digit is ten, we use the letter A. When a digit is eleven, we use the letter B. C is twelve, D is thirteen, E is fourteen, and F is fifteen. (Anything past that spills over into the next digit, just like how decimal doesn't have anything over the digit 9.)
 
 Let's use another chart to convert from hexadecimal to decimal.
+
 ======  ======  ======  ======  ======
 Place   16384s  256s      16s      1s
 ======  ======  ======  ======  ======
