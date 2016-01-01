@@ -13,12 +13,13 @@ Decimal   Hexadecimal   Binary
 ?         $1E           ?
 ========  ============  ======  
 
-Ok, so for the first problem, we need to convert 10 in decimal to hexadecimal. Let's make another chart.
 ========  ============  ======  
 Decimal   Hexadecimal   Binary    
 ========  ============  ====== 
 10        ?             ?
 ========  ============  ======  
+Ok, so for the first problem, we need to convert 10 in decimal to hexadecimal. Let's make another chart.
+
 
 ======  =======  ======  ======  ======
 Place   16384's  256's   16's     1's
