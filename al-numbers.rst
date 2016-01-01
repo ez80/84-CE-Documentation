@@ -17,7 +17,8 @@ Decimal   Hexadecimal   Binary
 Decimal   Hexadecimal   Binary    
 ========  ============  ====== 
 10        ?             ?
-========  ============  ======  
+========  ============  ======
+  
 Ok, so for the first problem, we need to convert 10 in decimal to hexadecimal. Let's make another chart.
 
 
@@ -278,7 +279,7 @@ Decimal   Hexadecimal   Binary
 ========  ============  ======== 
 1         1              0001
 2         2              0010
-3         3               0011
+3         3              0011
 4         4              0100
 5         5              0101
 6         6              0110        
@@ -291,7 +292,7 @@ Decimal   Hexadecimal   Binary
 13        D              1101
 14        E              1110
 15        F              1111    
-========  ============  =========
+========  ============  ========
 
 You can use it to convert easily, for example:
 $7F in binary is 01111111
