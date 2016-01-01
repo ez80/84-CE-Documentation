@@ -5,14 +5,19 @@ Hex, Binary, and Decimal
 | If you would prefer a video tutorial, you can use `this <http://youtu.be/jvx-NrILgpE>`_ instead. Just know that assembly programmers use the prefix "$" for hexadecimal and "%" for binary.
 
 When we humans write numbers, we like to use base 10, also called decimal. Decimal is a number system in which there are ten digits (0-9). We can write any number from zero to nine using that digit.
+
 - 4
 
 But if we want to write a number greater than nine, we have to use two digits.
+
 - 42
+
 The digit on the left tells you how many "tens" there are in this number (because we use base 10) and the digit on the right tells you how many "ones" there are in this number. So we can say that a two-digit number is equal to ``( 10 * digit on the left ) + digit on the right``.
 
 For numbers greater than 99, the highest two-digit number, we use three digits.
+
 - 256
+
 The digit on the right now tells you how many "hundreds" there are (one hundred being the next power of ten), and the middle digit tells you how many "tens" there are, etc. So we can say that a three-digit number is equal to ``( 100 * digit on the left ) + ( 10 * digit in the middle ) + digit on the right
 
 I'm sure you can see the pattern by now.
@@ -60,5 +65,7 @@ Just like with binary numbers, we multiply down and add across. We just have to 
 36864 + 2304 + 32 + 12 = 39212. That was a very large number. If we were to write it out in binary it would be %1001100100101100. Ick. Hexadecimal makes things a lot cleaner. And the best part is that every four digits in binary is equal to EXACTLY one hexadecimal digit! So if you split up that icky binary string into sections of four (%1001 %1001 %0010 %1100) every little section corresponds with one of the digits of the hexadecimal string. This makes converting between binary and hexadecimal much easier if you just memorize which 4-digit binary numbers go with which hexadecimal digits.
 
 Okay, so everything in computers is actually binary, which can be represented more nicely in hexadecimal. But even a computer can't manage a humongous amount of binary in one large lump. It needs to organize things. So it splits up the data into sections called bytes. Every binary digit in a computer is a bit. If the bit is one, we say it is on. If it is zero, we say it is off. Every byte has 8 bits. That means each byte is an 8-digit binary number, or a 2-digit hexadecimal number. Since a single byte is two hexadecimal digits and the highest number you can write with two hexadecimal digits is $FF (255 in decimal), a byte can store a number from 0 to 255. This is why lots of computer things have limits at 255 or 256. You know the term kilobyte, which is 1024 bytes (roughly a thousand). A megabyte is of course 1048576 bytes (roughly a million).
+
+Finally, computers start counting with zeroes, so if I have two files, one would be labeled file 0, and the other file 1.
 
 *In the next tutorial, we'll be learning about how information is stored on your calculator.*
