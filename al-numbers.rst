@@ -203,6 +203,7 @@ Decimal   Hexadecimal   Binary
 
 
 The solution:
+
 ========  ============  ======  
 Decimal   Hexadecimal   Binary    
 ========  ============  ====== 
