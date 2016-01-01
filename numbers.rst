@@ -29,7 +29,7 @@ In base 10, each digit is ten times as significant as the next. For example, a s
 So how can we use this information to go from a binary number to a decimal number? We make a chart!
 
 ======  ======  ======  ======  ======  ======  ======
-Place   32s     16s     8s      4s      2s      1s
+Place   32's    16's    8's     4's     2's     1's
 ======  ======  ======  ======  ======  ======  ======
 Digit   1       0       1       0       1       0
 ======  ======  ======  ======  ======  ======  ======
@@ -50,11 +50,11 @@ But wait! In decimal, we had ten digits. Binary had two. Hexadecimal needs... si
 
 Let's use another chart to convert from hexadecimal to decimal.
 
-======  ======  ======  ======  ======
-Place   16384s  256s      16s      1s
-======  ======  ======  ======  ======
-Digit   9       9       2       C
-======  ======  ======  ======  ======
+======  =======  ======  ======  ======
+Place   16384's  256's   16's    1's
+======  =======  ======  ======  ======
+Digit   9        9       2       C
+======  =======  ======  ======  ======
 Just like with binary numbers, we multiply down and add across. We just have to remember that letters A-F correspond to the numbers 10-15.
 
 | There is a C in the 1s place, so we multiple 1 times 12 (C = 12). The result is 12.
