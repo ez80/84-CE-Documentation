@@ -6,7 +6,7 @@ More Websites
 | CE Programming Documentation: `TI 84+CE Assembly and C Tutorials <http://ce-programming.github.io/documentation/>`_
 | Learn Assembly In 28 Days: `TI 83+ Assembly Tutorial <http://media.taricorp.net/83pa28d/welcome.html>`_
 | Cemetech: `Forums and Archives <https://cemetech.net>`_
-| WikiTI: `Visit here <http://wikiti.brandonw.net>`_
+| WikiTI: `84+CE Technical Info <http://wikiti.brandonw.net>`_
 
 Notepad++
 -------------------------------------------------
