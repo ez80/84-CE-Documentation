@@ -12,30 +12,30 @@ Contents:
   :maxdepth: 2
   :caption: Tutorials
   
-  tut/introtoassembly
-  tut/asmbasics
-  tut/numbers
-  tut/registers
-  tut/labels
-  tut/romcalls
+  tutorial/introtoassembly
+  tutorial/asmbasics
+  tutorial/numbers
+  tutorial/registers
+  tutorial/labels
+  tutorial/romcalls
 
 .. toctree::
   :maxdepth: 2
   :caption: Instruction Set
   
-  doc/arithmetic-instructions
-  doc/bit-ops
-  doc/bit-shifts
-  doc/block-transfer-compare
-  doc/io
-  doc/ld-ex
-  doc/logic
-  doc/prgm-flow
-  doc/proc-ctrl
+  docs/arithmetic-instructions
+  docs/bit-ops
+  docs/bit-shifts
+  docs/block-transfer-compare
+  docs/io
+  docs/ld-ex
+  docs/logic
+  docs/prgm-flow
+  docs/proc-ctrl
 
 .. toctree::
   :maxdepth: 2
   :caption: Reference
   
-  ref/hexcodes
-  ref/resources
+  reference/hexcodes
+  reference/resources
