@@ -27,9 +27,42 @@ When used on the home screen, it allows you to use programming commands like If 
 
 .. code-block:: asm
 
- ld a,(iy+8)
- xor 2 
- ld (iy+8),a
- ret
+  ld a,(iy+8)
+  xor 2 
+  ld (iy+8),a
+  ret
+ 
+Quick Key
+--------------------
+
+This is a getKey routine that makes all keys repeat, not just arrows and there is no delay between repeats. The key codes are different, so you might need to experiment.
+
+.. code-block:: asm
+
+ 3A8705D0CD080B02CD300F02C9
+
+.. code-block:: asm
+
+  ld a,(kbdScanCode)
+  call _SetXXOP1
+  call _StoAns
+  ret
+ 
+ 
+Text Inverse
+--------------------
+
+This will switch from normal text mode to inverse (white text on black background) and vice versa.
+
+.. code-block:: asm
+
+ FD7E05EE08FD7705C9
+
+.. code-block:: asm
+
+  ld a,(iy+textFlags)
+  xor 1&lt;&lt;textInverse
+  ld (iy+textFlags),a
+  ret
  
 Hexcode descriptions originally from `TI-BD <http://tibasicdev.wikidot.com/hexcodes>`_. 
