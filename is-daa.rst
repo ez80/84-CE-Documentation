@@ -39,4 +39,4 @@ DAA
 **See Also**
 	`ADD </en/latest/is-add.html>`_, `ADC </en/latest/is-adc.html>`_, `SBC </en/latest/is-sbc.html>`_, `SUB </en/latest/is-sub.html>`_
 
-.. _even parity: https://en.wikipedia.org/wiki/Parity_bit
+.. _parity: https://en.wikipedia.org/wiki/Parity_bit
