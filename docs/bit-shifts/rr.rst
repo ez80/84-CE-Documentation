@@ -16,29 +16,29 @@ RR
 	================    ==============================================
 	Register/Flag       8-bit                                     
 	================    ==============================================
-	``M``               .. image:: images/small/rl.png
+	``M``               .. image:: images/small/rr.png
 	``S`` flag          Set if the result is negative; else reset
 	``Z`` flag          Set if the result is 0; else reset
 	``H`` flag          Reset
 	``P/V`` flag        Set if the result has even parity_; else reset
 	``N`` flag          Reset
-	``C`` flag          7th bit of ``M``
+	``C`` flag          0th bit of ``M``
 	================    ==============================================
 
 **Allowed Instructions**
 	================  ================  ================  ================  ================
 	Instruction       Opcode            CC (ADL/non-ADL)  CC (.S)           CC (.L)
 	================  ================  ================  ================  ================
-	rl a              $CB, $17          2F                X                 X
-	rl b              $CB, $10          2F                X                 X
-	rl c              $CB, $11          2F                X                 X
-	rl d              $CB, $12          2F                X                 X
-	rl e              $CB, $13          2F                X                 X
-	rl h              $CB, $14          2F                X                 X
-	rl l              $CB, $15          2F                X                 X
-	rl (hl)           $CB, $16          2F + 1R + 1W + 1  3F + 1R + 1W + 1  3F + 1R + 1W + 1
-	rl (ix+n)         $DD, $CB, n, $16  4F + 1R + 1W + 1  5F + 1R + 1W + 1  5F + 1R + 1W + 1
-	rl (iy+n)         $FD, $CB, n, $16  4F + 1R + 1W + 1  5F + 1R + 1W + 1  5F + 1R + 1W + 1
+	rl a              $CB, $1F          2F                X                 X
+	rl b              $CB, $18          2F                X                 X
+	rl c              $CB, $19          2F                X                 X
+	rl d              $CB, $1A          2F                X                 X
+	rl e              $CB, $1B          2F                X                 X
+	rl h              $CB, $1C          2F                X                 X
+	rl l              $CB, $1D          2F                X                 X
+	rl (hl)           $CB, $1E          2F + 1R + 1W + 1  3F + 1R + 1W + 1  3F + 1R + 1W + 1
+	rl (ix+n)         $DD, $CB, n, $1E  4F + 1R + 1W + 1  5F + 1R + 1W + 1  5F + 1R + 1W + 1
+	rl (iy+n)         $FD, $CB, n, $1E  4F + 1R + 1W + 1  5F + 1R + 1W + 1  5F + 1R + 1W + 1
 	================  ================  ================  ================  ================
 
 **Notes**
