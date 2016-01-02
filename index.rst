@@ -17,11 +17,15 @@ Contents:
   numbers
   registers
   romcalls
-  resources
 
 .. toctree::
   :maxdepth: 2
-  :caption: Reference Documents
+  :caption: Instruction Set
   
   arithmetic-instructions
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Example Code
+  
   hexcodes

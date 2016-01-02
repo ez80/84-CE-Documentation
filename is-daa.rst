@@ -8,39 +8,25 @@ DAA
 	| Does cool stuff with binary-coded decimal. (Please someone tell me how this works???)
 
 **Uses**
-	- Comparing two bytes
+	- Probably useful for BCD arithmetic, but I'm not sure quite how.
 
 **Results**
-	================    ==========================================
-	Register/Flag       8-bit                                     
-	================    ==========================================
-	``S`` flag          Set if the result is negative; else reset
-	``Z`` flag          Set if ``M``=``N``
-	``H`` flag          Set if borrow from bit 4; else reset
-	``P/V`` flag        Set if overflow; else reset
-	``N`` flag          Set
-	``C`` flag          Set if borrow; else reset
-	================    ==========================================
+	================    ==============================================
+	Register/Flag       8-bit
+	================    ==============================================
+	``S`` flag          Set to the 7th bit of the result
+	``Z`` flag          Set if the result is 0; else reset
+	``H`` flag          Really complicated
+	``P/V`` flag        Set if the result has even parity_; else reset
+	``N`` flag          Not affected
+	``C`` flag          Really complicated
+	================    ==============================================
 
 **Allowed Instructions**
 	================  ================  ==================  ==================  ==================
 	Instruction       Opcode            CC (ADL/non-ADL)    CC (.S)             CC (.L)
 	================  ================  ==================  ==================  ==================
-	cp a,a           $BF               1F                  X                   X
-	cp a,b           $B8               1F                  X                   X
-	cp a,c           $B9               1F                  X                   X
-	cp a,d           $BA               1F                  X                   X
-	cp a,e           $BB               1F                  X                   X
-	cp a,h           $BC               1F                  X                   X
-	cp a,l           $BD               1F                  X                   X
-	cp a,ixh         $DD, $BC          2F                  X                   X
-	cp a,ixl         $DD, $BD          2F                  X                   X
-	cp a,iyh         $FD, $BC          2F                  X                   X
-	cp a,iyl         $FD, $BD          2F                  X                   X
-	cp a,(hl)        $BE               1F + 1R             2F + 1R             2F + 1R
-	cp a,(ix+n)      $DD, $BE, n       3F + 1R             4F + 1R             4F + 1R
-	cp a,(iy+n)      $FD, $BE, n       3F + 1R             4F + 1R             4F + 1R
-	cp a,n           $FE, n            2F                  X                   X
+	daa               $27               1F                  X                   X
 	================  ================  ==================  ==================  ==================
 
 **Notes**
@@ -52,3 +38,5 @@ DAA
 
 **See Also**
 	`ADD </en/latest/is-add.html>`_, `ADC </en/latest/is-adc.html>`_, `SBC </en/latest/is-sbc.html>`_, `SUB </en/latest/is-sub.html>`_
+
+.. _even parity: https://en.wikipedia.org/wiki/Parity_bit
