@@ -9,3 +9,5 @@ Arithmetic Instructions
   is-add
   is-cp
   is-daa
+  is-dec
+  is-inc
