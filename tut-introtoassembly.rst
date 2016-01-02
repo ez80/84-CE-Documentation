@@ -79,4 +79,4 @@ Run build.bat. Inside the "bin" folder you should see a file named FIRSTPRGM.8xp
 
 If this doesn't work, try again to make sure you followed each step of the tutorial again. You can also post for help on the forums here: http://cemetech.net.
 
-*In next lesson we'll dive right into learning ASM.*
+*In next lesson we'll dive right into learning assembly.*

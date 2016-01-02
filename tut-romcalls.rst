@@ -73,4 +73,4 @@ Don't worry about the second to last line for now, we'll learn what it does late
 
 Once again, you can learn more about each romcall in the PDF above. From now on, if there is a romcall you don't recognize, use the PDF.
 
-*The next tutorial's contents are unknown*
+*The next tutorial's contents are unknown. How mysterious!*
