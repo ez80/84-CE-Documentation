@@ -2,7 +2,7 @@ ADC
 --------
 
 **ADC M,N**
-	Add with carry
+	Add with Carry
 
 **Description**
 	| Adds ``M``, ``N``, and the carry flag (+0 or +1) and stores the result in ``M``.
