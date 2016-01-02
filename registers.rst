@@ -87,5 +87,5 @@ Don't worry if you don't immediately get it, it will come to you eventually. Now
   
 If you know what's happening here, good for you! If you don't, it's ok. You'll get it later.
 
-*In the next tutorial, we'll learn about...?*
+*In the next tutorial, we'll learn about labels*
   

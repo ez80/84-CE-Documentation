@@ -16,6 +16,7 @@ Contents:
   asmbasics
   numbers
   registers
+  labels
   romcalls
 
 .. toctree::
