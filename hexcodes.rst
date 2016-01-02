@@ -23,7 +23,7 @@ Toggle Program Mode
 
 When used in a program, it allows you to use Archive and UnArchive on other programs. Make sure to switch back to "program mode" when you're done by running the program again.
 
-..raw:: html
+.. raw:: html
 
  <br>
  

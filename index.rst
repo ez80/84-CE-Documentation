@@ -26,6 +26,7 @@ Contents:
 
 .. toctree::
   :maxdepth: 2
-  :caption: Example Code
+  :caption: Reference
   
   hexcodes
+  resources
