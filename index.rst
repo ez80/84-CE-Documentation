@@ -21,6 +21,7 @@ Contents:
 
 .. toctree::
   :maxdepth: 2
-  :caption: Instruction Set
+  :caption: Reference Documents
   
   arithmetic-instructions
+  hexcodes
