@@ -26,7 +26,6 @@ When used in a program, it allows you to use Archive and UnArchive on other prog
 .. raw:: html
 
  <br>
- 
 When used on the home screen, it allows you to use programming commands like If and For(; this has limited utility, but maybe it's useful to check a short bit of code without creating a new program for it.
 
 
