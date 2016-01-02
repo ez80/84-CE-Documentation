@@ -6,7 +6,7 @@ RL
 
 **Description**
 	| Performs a left shift on ``M``; the 7th bit of ``M`` is moved into the carry, and the carry is moved into the 0th bit of ``M``.
-	| .. image:: images/rl.png
+	.. image:: images/rl.png
 
 **Uses**
 	- Quickly multiplying by two
