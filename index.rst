@@ -26,7 +26,7 @@ Contents:
   arithmetic-instructions
   bit-ops
   bit-shifts
-  block-transfer-compare
+  folder/block-transfer-compare
   io
   ld-ex
   logic
