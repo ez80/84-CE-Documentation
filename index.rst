@@ -24,6 +24,14 @@ Contents:
   :caption: Instruction Set
   
   arithmetic-instructions
+  bit-ops
+  bit-shifts
+  block-transfer-compare
+  io
+  ld-ex
+  logic
+  prgm-flow
+  proc-ctrl
 
 .. toctree::
   :maxdepth: 2
