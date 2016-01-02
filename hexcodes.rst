@@ -21,7 +21,7 @@ Toggle Program Mode
 When used in a program, it allows you to use Archive and UnArchive on other programs. Make sure to switch back to "program mode" when you're done by running the program again.
 When used on the home screen, it allows you to use programming commands like If and For(; this has limited utility, but maybe it's useful to check a short bit of code without creating a new program for it.
 
-.. code-block:: 
+.. code-block:: asm
 
  FD7E08EE02FD7708C9
 
