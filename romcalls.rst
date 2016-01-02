@@ -17,6 +17,7 @@ Inside is a list of addresses that define where the romcalls (and other importan
 So how do we call a romcall?
 
 .. code-block:: asm
+
   call _PutS
   
 This will call the romcall _PutS, which as you can see in the system routines pdf, reads the string inside the address in HL.
@@ -45,13 +46,14 @@ Recall from the very first tutorial the example program
 Now that we know romcalls, we can figure out what each line does.
 
 .. code-block:: asm
+
   call _homeup
   call _ClrScrnFull
 
 _HomeUp isn't in the System Routines file, but it and _ClrScrnFull set up for the text output by resetting the screen.
 
-
 .. code-block:: asm
+
    ld hl,TutorialText
    call _PutS
 
@@ -60,6 +62,7 @@ From the last tutorial, we learned about labels, and how they are converted to a
 _PutS reads a null terminating string from HL. All that means is that the string ends in 0.
 
 .. code-block:: asm
+
   call _GetKey
   call _ClrScrnFull
   res donePrgm,(iy+doneFlags)
