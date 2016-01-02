@@ -16,7 +16,7 @@ Each hex code will have the program and the source in assembly, along with a bri
 **Make sure you have the FULL, correct hexcode. These programs can clear your ram if not entered correctly!**
 
 Toggle Program Mode
-____________________
+--------------------
 
 ``FD7E08EE02FD7708C9``
 
@@ -31,3 +31,5 @@ When used on the home screen, it allows you to use programming commands like If 
  xor 2 
  ld (iy+8),a
  ret
+ 
+Hexcode descriptions originally from <a href="http://tibasicdev.wikidot.com/hexcodes">TI-BD</a>. 
