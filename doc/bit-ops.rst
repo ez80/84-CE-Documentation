@@ -5,6 +5,6 @@ Bit Manipulation
 .. toctree::
   :maxdepth: 2
   
-  is-bit
-  is-res
-  is-set
+  bit-ops/bit
+  bit-ops/res
+  bit-ops/set

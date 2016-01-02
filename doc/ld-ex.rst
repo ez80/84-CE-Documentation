@@ -5,10 +5,10 @@ Load And Exchange
 .. toctree::
   :maxdepth: 2
   
-  is-ex
-  is-exx
-  is-ld
-  is-lea
-  is-pea
-  is-pop
-  is-push
+  ld-ex/ex
+  ld-ex/exx
+  ld-ex/ld
+  ld-ex/lea
+  ld-ex/pea
+  ld-ex/pop
+  ld-ex/push
