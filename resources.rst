@@ -5,8 +5,8 @@ More Websites
 -------------------------------------------------
 | CE Programming Documentation: `TI 84+CE Assembly and C Tutorials <http://ce-programming.github.io/documentation/>`_
 | Learn Assembly In 28 Days: `TI 83+ Assembly Tutorial <http://media.taricorp.net/83pa28d/welcome.html>`_
-| WikiTI: `Visit here <http://wikiti.brandonw.net>`_
 | Cemetech: `Forums and Archives <https://cemetech.net>`_
+| WikiTI: `Visit here <http://wikiti.brandonw.net>`_
 
 Notepad++
 -------------------------------------------------
@@ -27,4 +27,4 @@ TI 84+CE Equates File
 
 TI 83+ System Routines PDF
 -------------------------------------------------
-| Download `here <https://education.ti.com/~/media/01E6AF2CADF84171B6F2E2039357BAAC>`_, with one problem. 
+| Download `here <https://education.ti.com/~/media/01E6AF2CADF84171B6F2E2039357BAAC>`_
