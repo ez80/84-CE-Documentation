@@ -1,6 +1,6 @@
 Hex, Binary, and Decimal Additional Learning
 ********************************************
-*Note: This is the additional learning section of the Hex, Binary, and Decimal tutorial, the original tutorial is available* `here </en/latest/numbers.html>`_.
+*Note: This is the additional learning section of the Hex, Binary, and Decimal tutorial, the original tutorial is available* `here </en/latest/tutorial/numbers.html>`_.
 
 Ok, so let's visit our previous practice problems. We'll walk through them step by step.
 
@@ -294,4 +294,4 @@ $7F in binary is 01111111
 
 If you still don't understand, you can ask around on the `Cemetech <http://cemetech.net>`_ forums. These concepts will be used quite frequently, so you need to master them.
 
-`To the next tutorial! </en/latest/registers.html>`_ 
+`To the next tutorial! </en/latest/tutorial/registers.html>`_ 

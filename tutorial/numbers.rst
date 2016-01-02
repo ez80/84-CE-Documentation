@@ -81,7 +81,7 @@ Decimal   Hexadecimal   Binary
 
 If you can do all of these problems, you are ready to move on to the next tutorial.
 
-If you need more help, visit the additional learning page: `here </en/latest/al-numbers.html>`_ 
+If you need more help, visit the additional learning page: `here </en/latest/al/numbers.html>`_ 
 
 We'll be using these concepts very frequently, so make sure you have mastered them before moving on to the next tutorial.
 
