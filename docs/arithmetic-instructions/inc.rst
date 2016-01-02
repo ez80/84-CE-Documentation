@@ -53,4 +53,4 @@ INC
 	- Keep in mind that the flags are not altered when using this instruction with a 16-bit and 24-bit operand.
 
 **See Also**
-	`DEC </en/latest/is-dec.html>`_
+	`DEC <dec.html>`_
