@@ -8,9 +8,6 @@ ADD
 	| Adds ``M`` and ``N`` and stores the result in ``M``.
 	| ``M += N``
 
-**Uses**
-	- Adding two numbers together
-
 **Results**
 	================    ==========================================  ==========================================  ========================================
 	Register/Flag       8-bit                                       16-bit (non-ADL)                            24-bit (ADL)
