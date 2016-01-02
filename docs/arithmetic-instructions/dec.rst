@@ -53,4 +53,4 @@ DEC
 	- While this instruction can be combined with a ``jr nz,LoopLabel`` to create a great 8-bit loop, using ``dec`` with a 16-bit or 24-bit operand will not alter the flags, so you'll need another method of checking if the register pair is zero.
 
 **See Also**
-	`INC </en/latest/is-inc.html>`_
+	`INC <inc.html>`_

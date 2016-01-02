@@ -58,9 +58,9 @@ ADD
 	================  ================  ================  ================  ================
 
 **Notes**
-	- Unlike `ADC </en/latest/is-adc.html>`_, this instruction **does** support using the index registers IX and IY as the first operand. This is the only difference in the allowed instructions between the two.
-	- This instruction **does not** modify the ``S``, ``Z``, and ``P/V`` flags when doing 16-bit and 24-bit addition. For that, you can use `ADC </en/latest/is-adc.html>`_.
+	- Unlike `ADC <adc.html>`_, this instruction **does** support using the index registers IX and IY as the first operand. This is the only difference in the allowed instructions between the two.
+	- This instruction **does not** modify the ``S``, ``Z``, and ``P/V`` flags when doing 16-bit and 24-bit addition. For that, you can use `ADC <adc.html>`_.
 	- Like most instructions, HL, IX, and IY are mutually exclusive. I.e. they cannot be used in the same instructions.
 
 **See Also**
-	`ADC </en/latest/is-adc.html>`_, `SBC </en/latest/is-sbc.html>`_, `SUB </en/latest/is-sub.html>`_
+	`ADC <adc.html>`_, `SBC <sbc.html>`_, `SUB <sub.html>`_

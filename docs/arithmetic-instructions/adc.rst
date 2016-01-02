@@ -56,8 +56,8 @@ ADC
 	================  ================  ================  ================  ================
 
 **Notes**
-	- Unlike `ADD </en/latest/is-add.html>`_, this instruction **does not** support using the index registers IX and IY as the first operand.
-	- Unlike `ADD </en/latest/is-add.html>`_, this instruction **does** modify the ``Z`` flag when doing 16-bit and 24-bit addition.
+	- Unlike `ADD <add.html>`_, this instruction **does not** support using the index registers IX and IY as the first operand.
+	- Unlike `ADD <add.html>`_, this instruction **does** modify the ``Z`` flag when doing 16-bit and 24-bit addition.
 
 **See Also**
-	`ADD </en/latest/is-add.html>`_, `SBC </en/latest/is-sbc.html>`_, `SUB </en/latest/is-sub.html>`_
+	`ADD <add.html>`_, `SBC <sbc.html>`_, `SUB <sub.html>`_

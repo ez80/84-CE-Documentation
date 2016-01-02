@@ -112,4 +112,4 @@ BIT
 		- ``NZ`` means the bit is **one** (non-zero)
 
 **See Also**
-	`RES </en/latest/is-res.html>`_, `SET </en/latest/is-set.html>`_
+	`RES <res.html>`_, `SET <set.html>`_

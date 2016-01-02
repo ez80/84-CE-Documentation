@@ -9,7 +9,7 @@ RR
 	.. image:: images/rr.png
 
 **Uses**
-	- Quickly multiplying by two
+	- Quickly dividing by two (carry flag is set if there was a remainder)
 	- Retrieving consecutive bits of a byte in a loop, starting from the left
 
 **Results**
@@ -45,6 +45,6 @@ RR
 	- When using ``RL`` to multiply a number by 2, first make sure the carry flag is reset the result will be ``( M * 2 ) + 1``.
 
 **See Also**
-	`RLA </en/latest/is-rla.html>`_, `RLC </en/latest/is-rlc.html>`_, `RR </en/latest/is-rr.html>`_, `SLA </en/latest/is-sla.html>`_
+	`RL <rr.html>`_, `RRA <rla.html>`_, `RRC <rlc.html>`_, `SRA <sla.html>`_, `SRL <sla.html>`_
 
 .. _parity: https://en.wikipedia.org/wiki/Parity_bit
