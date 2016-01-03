@@ -29,20 +29,20 @@ RR
 	================  ================  ================  ================  ================
 	Instruction       Opcode            CC (ADL/non-ADL)  CC (.S)           CC (.L)
 	================  ================  ================  ================  ================
-	rl a              $CB, $1F          2F                X                 X
-	rl b              $CB, $18          2F                X                 X
-	rl c              $CB, $19          2F                X                 X
-	rl d              $CB, $1A          2F                X                 X
-	rl e              $CB, $1B          2F                X                 X
-	rl h              $CB, $1C          2F                X                 X
-	rl l              $CB, $1D          2F                X                 X
-	rl (hl)           $CB, $1E          2F + 1R + 1W + 1  3F + 1R + 1W + 1  3F + 1R + 1W + 1
-	rl (ix+n)         $DD, $CB, n, $1E  4F + 1R + 1W + 1  5F + 1R + 1W + 1  5F + 1R + 1W + 1
-	rl (iy+n)         $FD, $CB, n, $1E  4F + 1R + 1W + 1  5F + 1R + 1W + 1  5F + 1R + 1W + 1
+	rr a              $CB, $1F          2F                X                 X
+	rr b              $CB, $18          2F                X                 X
+	rr c              $CB, $19          2F                X                 X
+	rr d              $CB, $1A          2F                X                 X
+	rr e              $CB, $1B          2F                X                 X
+	rr h              $CB, $1C          2F                X                 X
+	rr l              $CB, $1D          2F                X                 X
+	rr (hl)           $CB, $1E          2F + 1R + 1W + 1  3F + 1R + 1W + 1  3F + 1R + 1W + 1
+	rr (ix+n)         $DD, $CB, n, $1E  4F + 1R + 1W + 1  5F + 1R + 1W + 1  5F + 1R + 1W + 1
+	rr (iy+n)         $FD, $CB, n, $1E  4F + 1R + 1W + 1  5F + 1R + 1W + 1  5F + 1R + 1W + 1
 	================  ================  ================  ================  ================
 
 **Notes**
-	- When using ``RL`` to multiply a number by 2, first make sure the carry flag is reset the result will be ``( M * 2 ) + 1``.
+	- When using ``RR`` to divide a number by 2, first make sure the carry flag is reset the result will be ``( M * 2 ) + ( 128 * Carry )``.
 
 **See Also**
 	`RL <rr.html>`_, `RRA <rla.html>`_, `RRC <rlc.html>`_, `SRA <sla.html>`_, `SRL <sla.html>`_

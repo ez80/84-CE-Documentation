@@ -42,7 +42,7 @@ RL
 	================  ================  ================  ================  ================
 
 **Notes**
-	- When using ``RL`` to multiply a number by 2, first make sure the carry flag is reset the result will be ``( M * 2 ) + 1``.
+	- When using ``RL`` to multiply a number by 2, first make sure the carry flag is reset the result will be ``( M * 2 ) + Carry``.
 
 **See Also**
 	`RLA </en/latest/is-rla.html>`_, `RLC </en/latest/is-rlc.html>`_, `RR </en/latest/is-rr.html>`_, `SLA </en/latest/is-sla.html>`_
