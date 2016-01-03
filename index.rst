@@ -18,6 +18,7 @@ Contents:
   tutorial/registers
   tutorial/labels
   tutorial/romcalls
+  tutorial/hooks
 
 .. toctree::
   :maxdepth: 2
