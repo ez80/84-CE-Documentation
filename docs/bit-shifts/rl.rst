@@ -6,7 +6,7 @@ RL
 
 **Description**
 	| Performs a left shift on ``M``; the 7th bit of ``M`` is moved into the carry, and the carry is moved into the 0th bit of ``M``.
-	.. image:: images/rl.png
+	.. image:: /en/latest/images/rl.png
 
 **Uses**
 	- Quickly multiplying by two
@@ -16,7 +16,7 @@ RL
 	================    ==============================================
 	Register/Flag       8-bit                                     
 	================    ==============================================
-	``M``               .. image:: images/small/rl.png
+	``M``               .. image:: /en/latest/images/small/rl.png
 	``S`` flag          Set if the result is negative; else reset
 	``Z`` flag          Set if the result is 0; else reset
 	``H`` flag          Reset
@@ -42,9 +42,9 @@ RL
 	================  ================  ================  ================  ================
 
 **Notes**
-	- When using ``RL`` to multiply a number by 2, first make sure the carry flag is reset the result will be ``( M * 2 ) + Carry``.
+	- When using ``RL`` to multiply a number by 2, first make sure the carry flag is reset or the result will be ``( M * 2 ) + Carry``.
 
 **See Also**
-	`RLA </en/latest/is-rla.html>`_, `RLC </en/latest/is-rlc.html>`_, `RR </en/latest/is-rr.html>`_, `SLA </en/latest/is-sla.html>`_
+	`RLA <rla.html>`_, `RLC <rlc.html>`_, `RR <rr.html>`_, `SLA <sla.html>`_
 
 .. _parity: https://en.wikipedia.org/wiki/Parity_bit

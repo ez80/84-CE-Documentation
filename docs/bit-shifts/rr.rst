@@ -6,7 +6,7 @@ RR
 
 **Description**
 	| Performs a right shift on ``M``; the 0th bit of ``M`` is moved into the carry, and the carry is moved into the 7th bit of ``M``.
-	.. image:: images/rr.png
+	.. image:: /en/latest/images/rr.png
 
 **Uses**
 	- Quickly dividing by two (carry flag is set if there was a remainder)
@@ -16,7 +16,7 @@ RR
 	================    ==============================================
 	Register/Flag       8-bit                                     
 	================    ==============================================
-	``M``               .. image:: images/small/rr.png
+	``M``               .. image:: /en/latest/images/small/rr.png
 	``S`` flag          Set if the result is negative; else reset
 	``Z`` flag          Set if the result is 0; else reset
 	``H`` flag          Reset
@@ -42,9 +42,9 @@ RR
 	================  ================  ================  ================  ================
 
 **Notes**
-	- When using ``RR`` to divide a number by 2, first make sure the carry flag is reset the result will be ``( M * 2 ) + ( 128 * Carry )``.
+	- When using ``RR`` to divide a number by 2, first make sure the carry flag is reset or the result will be ``( M * 2 ) + ( 128 * Carry )``.
 
 **See Also**
-	`RL <rr.html>`_, `RRA <rla.html>`_, `RRC <rlc.html>`_, `SRA <sla.html>`_, `SRL <sla.html>`_
+	`RL <rr.html>`_, `RRA <rra.html>`_, `RRC <rrc.html>`_, `SRA <sra.html>`_, `SRL <srl.html>`_
 
 .. _parity: https://en.wikipedia.org/wiki/Parity_bit
