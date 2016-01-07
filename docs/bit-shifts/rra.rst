@@ -22,7 +22,7 @@ RRA
 	``H`` flag          Reset
 	``P/V`` flag        Not affected
 	``N`` flag          Reset
-	``C`` flag          0th bit of ``M``
+	``C`` flag          0th bit of ``A``
 	================    ==============================================
 
 **Allowed Instructions**

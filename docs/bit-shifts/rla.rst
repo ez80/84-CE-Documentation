@@ -22,7 +22,7 @@ RLA
 	``H`` flag          Reset
 	``P/V`` flag        Not affected
 	``N`` flag          Reset
-	``C`` flag          7th bit of ``M``
+	``C`` flag          7th bit of ``A``
 	================    ==============================================
 
 **Allowed Instructions**
@@ -38,5 +38,3 @@ RLA
 
 **See Also**
 	`RLA <rla.html>`_, `RLC <rlc.html>`_, `RR <rr.html>`_, `SLA <sla.html>`_
-
-.. _`RL A`: rl.html
