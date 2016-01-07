@@ -16,7 +16,7 @@ RLA
 	================    ==============================================
 	Register/Flag       8-bit                                     
 	================    ==============================================
-	``M``               .. image:: /en/latest/img/small/rl.png
+	``M``               .. image:: img/small/rl.png
 	``S`` flag          Not affected
 	``Z`` flag          Not affected
 	``H`` flag          Reset

@@ -16,7 +16,7 @@ RL
 	================    ==============================================
 	Register/Flag       8-bit                                     
 	================    ==============================================
-	``M``               .. image:: /en/latest/img/small/rl.png
+	``M``               .. image:: img/small/rl.png
 	``S`` flag          Set if the result is negative; else reset
 	``Z`` flag          Set if the result is 0; else reset
 	``H`` flag          Reset

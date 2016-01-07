@@ -16,7 +16,7 @@ RRA
 	================    ==============================================
 	Register/Flag       8-bit                                     
 	================    ==============================================
-	``A``               .. image:: /en/latest/img/small/rr.png
+	``A``               .. image:: img/small/rr.png
 	``S`` flag          Not affected
 	``Z`` flag          Not affected
 	``H`` flag          Reset
