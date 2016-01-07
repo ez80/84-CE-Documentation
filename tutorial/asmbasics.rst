@@ -8,9 +8,11 @@ Every program in assembly follows a specific format.
  #include "includes\ti84pce.inc"
  .assume ADL=1
  .org userMem-2
- .db tExtTok,tAsm84CeCmp
- ;program code
- ret
+  .db tExtTok,tAsm84CeCmp
+
+  ; Program code
+
+  ret
 
 But what does all of this code do?
 
@@ -37,17 +39,21 @@ This tells the assembler that this program will be located at ``userMem-2``, so 
 
 .. code-block:: asm
 
- .db tExtTok,tAsm84CeCmp
+  .db tExtTok,tAsm84CeCmp
 
 This is exactly equivalent to the ``Asm84CEPrgm`` token in BASIC; it tells your calculator that it should be executing an assembly program instead of a BASIC program. This is why when you try to run an assembly program on your calculator without the ``Asm(`` token, you get an error (and why you can't run a BASIC program with the ``Asm(`` token).
 
 
-After all of that, you can actually write the program's code.
+.. code-block:: asm
+
+  ; Program code
+
+This is where you can actually write the program's code.
 
 
 .. code-block:: asm
 
- ret
+  ret
 
 This exits the program (usually). More on that later.
 
