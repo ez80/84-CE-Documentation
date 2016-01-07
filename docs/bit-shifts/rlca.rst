@@ -1,22 +1,21 @@
-RLA
+RLCA
 --------
 
-**RLA**
-	Rotate Left Accumulator
+**RLCA**
+	Rotate Left Circular Accumulator
 
 **Description**
-	| Performs a very fast ``RL A``; the 7th bit of ``A`` is moved into the carry, and the carry is moved into the 0th bit of ``A``.
-	.. image:: img/rl.png
+	| Performs a very fast ``RLC A``; the 7th bit of ``A`` is copied into the carry and into the 0th bit of ``A``.
+	.. image:: img/rlc.png
 
 **Uses**
-	- Quickly multiplying ``A`` by two
-	- Retrieving consecutive bits of a byte in a loop, starting from the left
+	- Retrieving consecutive bits of a byte in a loop, starting from the left, without affecting the source data (after eight iterations)
 
 **Results**
 	================    ==============================================
 	Register/Flag       8-bit                                     
 	================    ==============================================
-	``A``               .. image:: img/small/rl.png
+	``A``               .. image:: img/small/rlc.png
 	``S`` flag          Not affected
 	``Z`` flag          Not affected
 	``H`` flag          Reset
@@ -29,12 +28,12 @@ RLA
 	================  ================  ================
 	Instruction       Opcode            CC (ADL/non-ADL)
 	================  ================  ================
-	rla               $17               1F              
+	rlca              $07               1F              
 	================  ================  ================
 
 **Notes**
-	- When using ``RLA`` to multiply ``A`` by 2, first make sure the carry flag is reset the result will be ``( A * 2 ) + Carry``.
-	- Unlike ``RL A``, this instruction does not meaningfully affect any flags except ``C``.
+	- Unlike ``RL``, the initial state of the carry flag has no effect on the result of this instruction.
+	- Unlike ``RLC A``, this instruction does not meaningfully affect any flags except ``C``.
 
 **See Also**
-	`RLA <rla.html>`_, `RLC <rlc.html>`_, `RR <rr.html>`_, `SLA <sla.html>`_
+	`RLA <rla.html>`_, `RLC <rlc.html>`_, `RRCA <rrca.html>`_

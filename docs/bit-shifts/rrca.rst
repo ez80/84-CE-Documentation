@@ -1,16 +1,15 @@
-RRA
+RRCA
 --------
 
-**RRA**
-	Rotate Right Accumulator
+**RRCA**
+	Rotate Right Circular Accumulator
 
 **Description**
-	| Performs a very fast ``RR A``; the 0th bit of ``A`` is moved into the carry, and the carry is moved into the 7th bit of ``A``.
-	.. image:: img/rr.png
+	| Performs a very fast ``RRC A``; the 0th bit of ``A`` is copied into the carry and into the 7th bit of ``A``.
+	.. image:: img/rrc.png
 
 **Uses**
-	- Quickly dividing ``A`` by two (carry flag is set if there was a remainder)
-	- Retrieving consecutive bits of a byte in a loop, starting from the right
+	- Retrieving consecutive bits of a byte in a loop, starting from the left, without affecting the source data (after eight iterations)
 
 **Results**
 	================    ==============================================
@@ -29,12 +28,12 @@ RRA
 	================  ================  ================
 	Instruction       Opcode            CC (ADL/non-ADL)
 	================  ================  ================
-	rra               $1F               1F              
+	rra               $0F               1F              
 	================  ================  ================
 
 **Notes**
-	- When using ``RRA`` to divide ``A`` by 2, first make sure the carry flag is reset or the result will be ``( A * 2 ) + ( 128 * Carry )``.
-	- Unlike ``RR A``, this instruction does not meaningfully affect any flags except ``C``.
+	- Unlike ``RR``, the initial state of the carry flag has no effect on the result of this instruction.
+	- Unlike ``RRC A``, this instruction does not meaningfully affect any flags except ``C``.
 
 **See Also**
-	`RLA <rla.html>`_, `RR <rr.html>`_, `RRCA <rrca.html>`_
+	`RLCA <rlca.html>`_, `RRA <rra.html>`_, `RRC <rrc.html>`_

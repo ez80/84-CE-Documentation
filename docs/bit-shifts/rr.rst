@@ -10,7 +10,7 @@ RR
 
 **Uses**
 	- Quickly dividing by two (carry flag is set if there was a remainder)
-	- Retrieving consecutive bits of a byte in a loop, starting from the left
+	- Retrieving consecutive bits of a byte in a loop, starting from the right
 
 **Results**
 	================    ==============================================
