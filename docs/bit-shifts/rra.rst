@@ -5,7 +5,7 @@ RRA
 	Rotate Right Accumulator
 
 **Description**
-	| Performs a very fast ```RR A`_``; the 0th bit of ``A`` is moved into the carry, and the carry is moved into the 7th bit of ``A``.
+	| Performs a very fast ``RR A``; the 0th bit of ``A`` is moved into the carry, and the carry is moved into the 7th bit of ``A``.
 	.. image:: img/rr.png
 
 **Uses**
@@ -38,5 +38,3 @@ RRA
 
 **See Also**
 	`RLA <rla.html>`_, `RR <rr.html>`_, `RRCA <rrca.html>`_
-
-.. _`RR A`: rl.html
