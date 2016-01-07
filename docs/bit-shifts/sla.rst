@@ -5,7 +5,7 @@ SLA
 	Shift Left Arithmetic
 
 **Description**
-	| Performs a left shift on ``M``; the 7th bit of ``M`` is moved into the carry, and the carry is moved into the 0th bit of ``M``.
+	| Performs a left shift on ``M``; the 7th bit of ``M`` is moved into the carry, and a zero is placed in the 0th bit of ``M``.
 	.. image:: img/sla.png
 
 **Uses**
@@ -42,8 +42,9 @@ SLA
 
 **Notes**
 	- Unlike ``RL``, the initial state of the carry flag has no effect on the result of this instruction, so a number can be easily doubled without worrying about the state of the carry flag.
+	- Despite the mnemonics, ``SLA`` has more in common with ``SRL`` (Shift Right Logical) than ``SRA`` (Shift Right Arithmetic). This is because ``SRA`` is intended for use with signed integers, whereas ``SLA`` and ``SRL`` are more useful with unsigned integers.
 
 **See Also**
-	`RLA <rla.html>`_, `RLC <rlc.html>`_, `RR <rr.html>`_, `SLA <sla.html>`_
+	`RL <rl.html>`_, `RLC <rlc.html>`_, `SRA <sra.html>`_, `SRL <srl.html>`_
 
 .. _parity: https://en.wikipedia.org/wiki/Parity_bit
