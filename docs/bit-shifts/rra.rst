@@ -6,7 +6,7 @@ RRA
 
 **Description**
 	| Performs a very fast ``RR A``_; the 0th bit of ``A`` is moved into the carry, and the carry is moved into the 7th bit of ``A``.
-	.. image:: img/rr.png
+	| .. image:: img/rr.png
 
 **Uses**
 	- Quickly dividing ``A`` by two (carry flag is set if there was a remainder)
