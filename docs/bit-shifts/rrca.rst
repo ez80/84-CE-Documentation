@@ -9,7 +9,7 @@ RRCA
 	.. image:: img/rrc.png
 
 **Uses**
-	- Retrieving consecutive bits of a byte in a loop, starting from the left, without affecting the source data (after eight iterations)
+	- Retrieving consecutive bits of a byte in a loop, starting from the right, without affecting the source data (after eight iterations)
 
 **Results**
 	================    ==============================================
