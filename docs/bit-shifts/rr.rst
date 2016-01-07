@@ -6,7 +6,7 @@ RR
 
 **Description**
 	| Performs a right shift on ``M``; the 0th bit of ``M`` is moved into the carry, and the carry is moved into the 7th bit of ``M``.
-	.. image:: /en/latest/images/rr.png
+	.. image:: /en/latest/img/rr.png
 
 **Uses**
 	- Quickly dividing by two (carry flag is set if there was a remainder)
@@ -16,7 +16,7 @@ RR
 	================    ==============================================
 	Register/Flag       8-bit                                     
 	================    ==============================================
-	``M``               .. image:: /en/latest/images/small/rr.png
+	``M``               .. image:: /en/latest/img/small/rr.png
 	``S`` flag          Set if the result is negative; else reset
 	``Z`` flag          Set if the result is 0; else reset
 	``H`` flag          Reset

@@ -2,11 +2,11 @@ RLA
 --------
 
 **RLA**
-	Rotate Left
+	Rotate Left Accumulator
 
 **Description**
 	| Performs a very fast ``RL A``; the 7th bit of ``A`` is moved into the carry, and the carry is moved into the 0th bit of ``A``.
-	.. image:: /en/latest/images/rl.png
+	.. image:: /en/latest/img/rl.png
 
 **Uses**
 	- Quickly multiplying ``A`` by two
@@ -16,7 +16,7 @@ RLA
 	================    ==============================================
 	Register/Flag       8-bit                                     
 	================    ==============================================
-	``M``               .. image:: /en/latest/images/small/rl.png
+	``M``               .. image:: /en/latest/img/small/rl.png
 	``S`` flag          Not affected
 	``Z`` flag          Not affected
 	``H`` flag          Reset

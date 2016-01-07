@@ -6,7 +6,7 @@ RL
 
 **Description**
 	| Performs a left shift on ``M``; the 7th bit of ``M`` is moved into the carry, and the carry is moved into the 0th bit of ``M``.
-	.. image:: /en/latest/images/rl.png
+	.. image:: /en/latest/img/rl.png
 
 **Uses**
 	- Quickly multiplying by two
@@ -16,7 +16,7 @@ RL
 	================    ==============================================
 	Register/Flag       8-bit                                     
 	================    ==============================================
-	``M``               .. image:: /en/latest/images/small/rl.png
+	``M``               .. image:: /en/latest/img/small/rl.png
 	``S`` flag          Set if the result is negative; else reset
 	``Z`` flag          Set if the result is 0; else reset
 	``H`` flag          Reset

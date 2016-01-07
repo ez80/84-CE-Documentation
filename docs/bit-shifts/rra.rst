@@ -5,8 +5,8 @@ RRA
 	Rotate Right Accumulator
 
 **Description**
-	| Performs a very fast ``RR A``_; the 0th bit of ``A`` is moved into the carry, and the carry is moved into the 7th bit of ``M``.
-	.. image:: /en/latest/images/rr.png
+	| Performs a very fast ``RR A``_; the 0th bit of ``A`` is moved into the carry, and the carry is moved into the 7th bit of ``A``.
+	.. image:: /en/latest/img/rr.png
 
 **Uses**
 	- Quickly dividing ``A`` by two (carry flag is set if there was a remainder)
@@ -16,7 +16,7 @@ RRA
 	================    ==============================================
 	Register/Flag       8-bit                                     
 	================    ==============================================
-	``A``               .. image:: /en/latest/images/small/rr.png
+	``A``               .. image:: /en/latest/img/small/rr.png
 	``S`` flag          Not affected
 	``Z`` flag          Not affected
 	``H`` flag          Reset
