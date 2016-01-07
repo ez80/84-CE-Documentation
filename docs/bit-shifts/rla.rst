@@ -6,7 +6,7 @@ RLA
 
 **Description**
 	| Performs a very fast ``RL A``; the 7th bit of ``A`` is moved into the carry, and the carry is moved into the 0th bit of ``A``.
-	.. image:: /en/latest/img/rl.png
+	.. image:: img/rl.png
 
 **Uses**
 	- Quickly multiplying ``A`` by two

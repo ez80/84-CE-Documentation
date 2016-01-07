@@ -6,7 +6,7 @@ RR
 
 **Description**
 	| Performs a right shift on ``M``; the 0th bit of ``M`` is moved into the carry, and the carry is moved into the 7th bit of ``M``.
-	.. image:: /en/latest/img/rr.png
+	.. image:: img/rr.png
 
 **Uses**
 	- Quickly dividing by two (carry flag is set if there was a remainder)
