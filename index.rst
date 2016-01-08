@@ -24,7 +24,7 @@ Contents:
   :maxdepth: 2
   :caption: Instruction Set
   
-  docs/arithmetic-instructions
+  docs/arithmetic
   docs/bit-ops
   docs/bit-shifts
   docs/block-transfer-compare

@@ -16,7 +16,7 @@ CP
 	Register/Flag       8-bit                                     
 	================    ==========================================
 	``S`` flag          Set if the result is negative; else reset
-	``Z`` flag          Set if ``M``=``N``
+	``Z`` flag          Set if ``M`` = ``N``
 	``H`` flag          Set if borrow from bit 4; else reset
 	``P/V`` flag        Set if overflow; else reset
 	``N`` flag          Set
@@ -52,4 +52,4 @@ CP
 		- ``NC`` means ``M`` ≥ ``N``
 
 **See Also**
-	`SUB <adc.html>`_, `SBC </en/latest/sbc.html>`_, `CPI </en/latest/block-transfer-compare/cpi.html>`_, `CPIR </en/latest/block-transfer-compare/cpir.html>`_, `CPD </en/latest/block-transfer-compare/cpd.html>`_, `CPDR </en/latest/block-transfer-compare/cpdr.html>`_
+	`SUB <adc.html>`_, `SBC <sbc.html>`_, `CPI </en/latest/block-ops/cpi.html>`_, `CPIR </en/latest/block-ops/cpir.html>`_, `CPD </en/latest/block-ops/cpd.html>`_, `CPDR </en/latest/block-ops/cpdr.html>`_
