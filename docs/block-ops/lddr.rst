@@ -7,10 +7,10 @@ LDDR
 **Description**
 	| Performs ``ldd`` until ``BC`` = 0, effectively copying ``BC`` bytes of data from ``HL`` to ``DE``, where ``HL`` and ``DE`` point to the end of their respective blocks.
 
-	.. code-block:: asm
-		ldd
-		ret po
-		jr -5
+.. code-block:: asm
+	ldd
+	ret po
+	jr -5
 
 **Uses**
 	- Copying lots of data
@@ -50,13 +50,13 @@ LDDR
 
 **Examples**
 
-	.. code-block:: asm
-		; Filling a block of memory with a single byte
-			ld hl,EndOfBlock
-			ld de,EndOfBlock-1
-			ld bc,SizeOfBlock-1
-			ld (hl),ByteToCopy
-			lddr
+.. code-block:: asm
+	; Filling a block of memory with a single byte
+		ld hl,EndOfBlock
+		ld de,EndOfBlock-1
+		ld bc,SizeOfBlock-1
+		ld (hl),ByteToCopy
+		lddr
 
 **See Also**
 	`CPDR <cpdr.html>`_, `LD </en/latest/docs/ld-ex/ld.html>`_, `LDD <ldd.html>`_, `LDI <ldi.html>`_, `LDIR <ldir.html>`_

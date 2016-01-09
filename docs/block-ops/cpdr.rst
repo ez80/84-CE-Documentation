@@ -7,13 +7,13 @@ CPDR
 **Description**
 	| Performs ``cpd`` until either ``A`` = ``(HL)`` or ``BC`` = 0.
 
-	.. code-block:: asm
-		cp a,(hl)
-		dec hl
-		dec bc
-		jr nz,-7
-		ret po
-		jr -10
+.. code-block:: asm
+	cp a,(hl)
+	dec hl
+	dec bc
+	jr nz,-7
+	ret po
+	jr -10
 
 **Uses**
 	- Finding a certain letter in a string (or other similar tasks)
