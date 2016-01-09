@@ -8,6 +8,7 @@ LDDR
 	| Performs ``ldd`` until ``BC`` = 0, effectively copying ``BC`` bytes of data from ``HL`` to ``DE``, where ``HL`` and ``DE`` point to the end of their respective blocks.
 
 .. code-block:: asm
+
 	ldd
 	ret po
 	jr -5
@@ -51,6 +52,7 @@ LDDR
 **Examples**
 
 .. code-block:: asm
+
 	; Filling a block of memory with a single byte
 		ld hl,EndOfBlock
 		ld de,EndOfBlock-1

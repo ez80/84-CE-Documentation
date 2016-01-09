@@ -8,6 +8,7 @@ CPDR
 	| Performs ``cpd`` until either ``A`` = ``(HL)`` or ``BC`` = 0.
 
 .. code-block:: asm
+
 	cp a,(hl)
 	dec hl
 	dec bc

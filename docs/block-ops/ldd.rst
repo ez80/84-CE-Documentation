@@ -8,6 +8,7 @@ LDD
 	| Copies one byte from ``(HL)`` to ``(DE)``, then decrements ``HL``, ``DE``, and ``BC``.
 
 .. code-block:: asm
+
 	ld (de),(hl) ; Not normally a valid instruction
 	dec hl
 	dec de
