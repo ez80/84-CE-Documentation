@@ -6,6 +6,7 @@ LDDR
 
 **Description**
 	| Performs ``ldd`` until ``BC`` = 0, effectively copying ``BC`` bytes of data from ``HL`` to ``DE``, where ``HL`` and ``DE`` point to the end of their respective blocks.
+
 	.. codeblock:: asm
 		ldd
 		ret po
@@ -16,13 +17,6 @@ LDDR
 		- Sprite routines
 		- Copying graphical data from some buffer to the actual screen
 		- Filling lots of space with one (or more) bytes
-
-		.. codeblock:: asm
-				ld hl,EndOfData
-				ld de,EndOfData-1
-				ld bc,SizeOfData-1
-				ld (hl),ByteToCopy
-				lddr
 
 **Results**
 	================    ==========================================  ========================================
@@ -53,6 +47,15 @@ LDDR
 	- Since most of the time it's more convenient to specify the beginning of a block of data than the end, ``LDIR`` is significantly more popular than ``LDDR``.
 	- Assuming you are copying hard-coded data and BC is NOT already set to the desired number of bytes, it is only faster to use hard-coded ``LDD``s instead of ``ld bc,BytesToCopy \ lddr`` if you are copying two bytes. Copying three bytes, the cycle times and size of the code are exactly the same (6 bytes, 6F+3R+3W+3).
 	- If you want to copy a few more bytes than whatever number is in ``BC``, it is both smaller and significantly faster to use ``INC BC`` several times than ``LDD``. (``INC BC`` is one byte and only 1F whereas ``LDD`` is two bytes and 2F+1R+1W+1.)
+
+**Examples**
+	.. codeblock:: asm
+	; Filling a block of memory with a single byte
+		ld hl,EndOfBlock
+		ld de,EndOfBlock-1
+		ld bc,SizeOfBlock-1
+		ld (hl),ByteToCopy
+		lddr
 
 **See Also**
 	`CPDR <cpdr.html>`_, `LD </en/latest/docs/ld-ex/ld.html>`_, `LDD <ldd.html>`_, `LDI <ldi.html>`_, `LDIR <ldir.html>`_
