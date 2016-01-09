@@ -6,19 +6,12 @@ CPI
 
 **Description**
 	| Performs ``cp a,(hl)``, then increments ``HL`` and decrements ``BC``.
-<<<<<<< HEAD
+
 		.. code-block:: asm
 		
 			cp a,(hl)
 			inc hl
 			dec bc
-=======
-	| .. code-block:: asm
-    | 
-	| 	cp a,(hl)
-	| 	inc hl
-	| 	dec bc
->>>>>>> origin/master
 
 **Uses**
 	- This instruction is not very useful on its own, as ``cp a,(hl)`` is both smaller and faster than a single ``CPI``, but is more often used is the repeating version of ``CPI``: ``CPIR``
