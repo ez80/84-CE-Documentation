@@ -6,6 +6,7 @@ LDDR
 
 **Description**
 	| Performs ``ldd`` until ``BC`` = 0, effectively copying ``BC`` bytes of data from ``HL`` to ``DE``, where ``HL`` and ``DE`` point to the end of their respective blocks.
+
 		.. code-block:: asm
 
 			ldd
