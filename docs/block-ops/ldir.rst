@@ -51,12 +51,12 @@ LDIR
 
 	.. codeblock:: asm
 
-	; Filling a block of memory with a single byte
-		ld hl,StartOfBlock
-		ld de,StartOfBlock+1
-		ld bc,SizeOfBlock-1
-		ld (hl),ByteToCopy
-		ldir
+		; Filling a block of memory with a single byte
+			ld hl,StartOfBlock
+			ld de,StartOfBlock+1
+			ld bc,SizeOfBlock-1
+			ld (hl),ByteToCopy
+			ldir
 
 **See Also**
 	`CPIR <cpir.html>`_, `LD </en/latest/docs/ld-ex/ld.html>`_, `LDD <ldd.html>`_, `LDDR <lddr.html>`_, `LDI <ldi.html>`_
