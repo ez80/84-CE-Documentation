@@ -6,7 +6,7 @@ CPI
 
 **Description**
 	| Performs ``cp a,(hl)``, then increments ``HL`` and decrements ``BC``.
-	.. codeblock:: asm
+	.. code-block:: asm
 		cp a,(hl)
 		inc hl
 		dec bc

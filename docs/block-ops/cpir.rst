@@ -6,8 +6,7 @@ CPIR
 
 **Description**
 	| Performs ``cpi`` until either ``A`` = ``(HL)`` or ``BC`` = 0.
-
-	.. codeblock:: asm
+	.. code-block:: asm
 		cp a,(hl)
 		inc hl
 		dec bc

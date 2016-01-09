@@ -6,7 +6,7 @@ CPD
 
 **Description**
 	| Performs ``cp a,(hl)``, then decrements ``HL`` and ``BC``.
-	.. codeblock:: asm
+	.. code-block:: asm
 		cp a,(hl)
 		dec hl
 		dec bc
