@@ -12,7 +12,7 @@ CPD
 		dec bc
 
 **Uses**
-	- This instruction is not very useful on its own, as ``cp a,(hl)`` is both smaller and faster than a single ``CPD``, but more often used is the repeating version of ``CPD``: ``CPDR``
+	- This instruction is not very useful on its own, as ``cp a,(hl)`` is both smaller and faster than a single ``CPD``, but is more often used is the repeating version of ``CPD``: ``CPDR``
 
 **Results**
 	================    ==========================================  ========================================
