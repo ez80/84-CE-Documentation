@@ -15,7 +15,7 @@ LDD
 			dec bc
 
 **Uses**
-	- This instruction is not very useful on its own, but is more often used is the repeating version of ``LDD``: ``LDDR``
+	- This instruction is not very useful on its own, but more often used is the repeating version of ``LDD``: ``LDDR``
 
 **Results**
 	================    ==========================================  ========================================

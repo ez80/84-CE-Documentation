@@ -14,7 +14,7 @@ CPI
 			dec bc
 
 **Uses**
-	- This instruction is not very useful on its own, as ``cp a,(hl)`` is both smaller and faster than a single ``CPI``, but is more often used is the repeating version of ``CPI``: ``CPIR``
+	- This instruction is not very useful on its own, as ``cp a,(hl)`` is both smaller and faster than a single ``CPI``, but more often used is the repeating version of ``CPI``: ``CPIR``
 
 **Results**
 	================    ==========================================  ========================================
