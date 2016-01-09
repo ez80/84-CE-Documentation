@@ -8,9 +8,9 @@ LDIR
 	| Performs ``ldi`` until ``BC`` = 0, effectively copying ``BC`` bytes of data from ``HL`` to ``DE``, where ``HL`` and ``DE`` point to the start of their respective blocks.
 
 .. code-block:: asm
-	ldi
-	ret po
-	jr -5
+ ldi
+ ret po
+ jr -5
 
 **Uses**
 	- Copying lots of data
@@ -50,12 +50,12 @@ LDIR
 **Examples**
 
 .. code-block:: asm
-	; Filling a block of memory with a single byte
-		ld hl,StartOfData
-		ld de,StartOfData+1
-		ld bc,SizeOfData-1
-		ld (hl),ByteToCopy
-		ldir
+ ; Filling a block of memory with a single byte
+ 	ld hl,StartOfData
+ 	ld de,StartOfData+1
+ 	ld bc,SizeOfData-1
+ 	ld (hl),ByteToCopy
+ 	ldir
 
 **See Also**
 	`CPIR <cpir.html>`_, `LD </en/latest/docs/ld-ex/ld.html>`_, `LDD <ldd.html>`_, `LDDR <lddr.html>`_, `LDI <ldi.html>`_
