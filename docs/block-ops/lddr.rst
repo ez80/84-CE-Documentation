@@ -6,12 +6,11 @@ LDDR
 
 **Description**
 	| Performs ``ldd`` until ``BC`` = 0, effectively copying ``BC`` bytes of data from ``HL`` to ``DE``, where ``HL`` and ``DE`` point to the end of their respective blocks.
+		.. code-block:: asm
 
-.. code-block:: asm
-
-	ldd
-	ret po
-	jr -5
+			ldd
+			ret po
+			jr -5
 
 **Uses**
 	- Copying lots of data
@@ -50,15 +49,14 @@ LDDR
 	- If you want to copy a few more bytes than whatever number is in ``BC``, it is both smaller and significantly faster to use ``INC BC`` several times than ``LDD``. (``INC BC`` is one byte and only 1F whereas ``LDD`` is two bytes and 2F+1R+1W+1.)
 
 **Examples**
+	.. code-block:: asm
 
-.. code-block:: asm
-
-	; Filling a block of memory with a single byte
-		ld hl,EndOfBlock
-		ld de,EndOfBlock-1
-		ld bc,SizeOfBlock-1
-		ld (hl),ByteToCopy
-		lddr
+		; Filling a block of memory with a single byte
+			ld hl,EndOfBlock
+			ld de,EndOfBlock-1
+			ld bc,SizeOfBlock-1
+			ld (hl),ByteToCopy
+			lddr
 
 **See Also**
 	`CPDR <cpdr.html>`_, `LD </en/latest/docs/ld-ex/ld.html>`_, `LDD <ldd.html>`_, `LDI <ldi.html>`_, `LDIR <ldir.html>`_

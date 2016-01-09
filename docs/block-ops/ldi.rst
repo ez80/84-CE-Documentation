@@ -6,13 +6,12 @@ LDI
 
 **Description**
 	| Copies one byte from ``(HL)`` to ``(DE)``, then increments ``HL``, increments ``DE``, and decrements ``BC``.
+		.. code-block:: asm
 
-.. code-block:: asm
-
-	ld (de),(hl) ; Not normally a valid instruction
-	inc hl
-	inc de
-	dec bc
+			ld (de),(hl) ; Not normally a valid instruction
+			inc hl
+			inc de
+			dec bc
 
 **Uses**
 	- This instruction is not very useful on its own, but is more often used is the repeating version of ``LDI``: ``LDIR``

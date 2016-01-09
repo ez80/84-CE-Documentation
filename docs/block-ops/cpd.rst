@@ -6,12 +6,11 @@ CPD
 
 **Description**
 	| Performs ``cp a,(hl)``, then decrements ``HL`` and ``BC``.
+	.. code-block:: asm
 
-.. code-block:: asm
-
-	cp a,(hl)
-	dec hl
-	dec bc
+		cp a,(hl)
+		dec hl
+		dec bc
 
 **Uses**
 	- This instruction is not very useful on its own, as ``cp a,(hl)`` is both smaller and faster than a single ``CPD``, but is more often used is the repeating version of ``CPD``: ``CPDR``

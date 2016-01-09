@@ -6,13 +6,12 @@ LDD
 
 **Description**
 	| Copies one byte from ``(HL)`` to ``(DE)``, then decrements ``HL``, ``DE``, and ``BC``.
+		.. code-block:: asm
 
-.. code-block:: asm
-
-	ld (de),(hl) ; Not normally a valid instruction
-	dec hl
-	dec de
-	dec bc
+			ld (de),(hl) ; Not normally a valid instruction
+			dec hl
+			dec de
+			dec bc
 
 **Uses**
 	- This instruction is not very useful on its own, but is more often used is the repeating version of ``LDD``: ``LDDR``
