@@ -59,5 +59,60 @@ LDIR
 				ld (hl),ByteToCopy
 				ldir
 
+	- Copy graphical data from vBuf2 to vBuf1
+
+			.. code-block:: asm
+
+				ld hl,vBuf2
+				ld de,vBuf1
+				ld bc,320*240
+				ldir
+
+	- Set up a hard-coded 8bpp palette
+
+			.. code-block:: asm
+
+				ld hl,Palette_Start
+				ld de,mpLcdPalette
+				ld bc,Palette_End-Palette_Start
+				ldir
+
+	- A simple 8bpp rectangle drawing routine
+
+			.. code-block:: asm
+
+				; INPUTS
+				; BC				Width
+				; DE				X-position
+				; H					Height
+				; L					Y-position
+				; (FillRect_Color)	Color
+				FillRect:
+					ld a,h ; Store the height in A to be used as a loop counter
+					ld h,160
+					mlt hl
+					add hl,hl ; HL now contains the Y position multiplied by 320
+					add hl,de ; Add in the X position...
+					ld de,vBuf1
+					add hl,de ; And the LCD memory location...
+					; Now HL is pointing to the first pixel of the rectangle
+					dec bc ; Get the rectangle width minus 1 in BC (more on that later)
+				FillRect_Loop:
+				FillRect_Color = $+1
+					ld (hl),0 ; This is self-modifying code
+					push hl
+					pop de
+					inc de ; Now DE = HL + 1
+					push bc ; Save BC for later
+					ldir ; Copy BC (width-1) bytes from HL (first pixel of this row of the rectangle) to DE (next pixel)
+					; Now one row of the rectangle is done
+					pop bc ; Grab BC again
+					ld de,320
+					add hl,de ; Advanced HL one pixel down...
+					sbc hl,bc ; And return to the left edge of the rectangle
+					dec a ; Decrement our loop counter...
+					jr nz,FillRect_Loop ; And repeat if we haven't finished
+					ret
+
 **See Also**
 	`CPIR <cpir.html>`_, `LD </en/latest/docs/ld-ex/ld.html>`_, `LDD <ldd.html>`_, `LDDR <lddr.html>`_, `LDI <ldi.html>`_
