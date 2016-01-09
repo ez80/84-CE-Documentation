@@ -27,7 +27,7 @@ Contents:
   docs/arithmetic
   docs/bit-ops
   docs/bit-shifts
-  docs/block-transfer-compare
+  docs/block-ops
   docs/io
   docs/ld-ex
   docs/logic
