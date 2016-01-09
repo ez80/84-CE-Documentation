@@ -5,7 +5,7 @@ CPI
 	Compare and Increment
 
 **Description**
-	| Performs ``cp a,(hl)``, then increments HL and decrements BC.
+	| Performs ``cp a,(hl)``, then increments ``HL`` and decrements ``BC``.
 	.. codeblock:: asm
 		cp a,(hl)
 		inc hl

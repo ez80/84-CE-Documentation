@@ -5,7 +5,7 @@ CPD
 	Compare and Decrement
 
 **Description**
-	| Performs ``cp a,(hl)``, then decrements HL and BC.
+	| Performs ``cp a,(hl)``, then decrements ``HL`` and ``BC``.
 	.. codeblock:: asm
 		cp a,(hl)
 		dec hl
