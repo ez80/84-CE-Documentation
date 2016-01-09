@@ -11,9 +11,9 @@ Contents:
 .. toctree::
   :maxdepth: 2
   :caption: Tutorials
-  
-  tutorial/introtoassembly
-  tutorial/asmbasics
+
+  tutorial/intro
+  tutorial/prgmstructure
   tutorial/numbers
   tutorial/registers
   tutorial/labels
@@ -23,7 +23,7 @@ Contents:
 .. toctree::
   :maxdepth: 2
   :caption: Instruction Set
-  
+
   docs/arithmetic
   docs/bit-ops
   docs/bit-shifts
@@ -37,6 +37,6 @@ Contents:
 .. toctree::
   :maxdepth: 2
   :caption: Reference
-  
+
   reference/hexcodes
   reference/resources

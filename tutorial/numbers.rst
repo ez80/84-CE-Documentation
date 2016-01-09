@@ -85,4 +85,4 @@ If you need more help, visit the additional learning page: `here </en/latest/tut
 
 We'll be using these concepts very frequently, so make sure you have mastered them before moving on to the next tutorial.
 
-*In the next tutorial, we'll be learning about how information is stored on your calculator.*
+*In the next tutorial we'll be learning about how information is stored on your calculator.*

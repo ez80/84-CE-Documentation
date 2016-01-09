@@ -10,9 +10,9 @@ CPDR
 		cp a,(hl)
 		dec hl
 		dec bc
-		jr nz,$-5
+		jr nz,-7
 		ret po
-		jr $-8
+		jr -10
 
 **Uses**
 	- Finding a certain letter in a string (or other similar tasks).

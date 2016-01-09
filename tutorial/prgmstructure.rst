@@ -1,4 +1,4 @@
-ASM Format
+Program Structure
 ********************************
 
 Every program in assembly follows a specific format.
@@ -61,4 +61,4 @@ This is where you can actually write the program's code.
 
 This exits the program (usually). More on that later.
 
-*In the next tutorial, we'll be learning about how numbers work on your calculator.*
+*In the next tutorial we'll be learn about how numbers work on your calculator.*

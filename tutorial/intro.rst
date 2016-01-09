@@ -80,4 +80,4 @@ Run ``build.bat`` by double-clicking on it. Inside the "bin" folder you should s
 
 If this doesn't work, try again to make sure you followed each step of the tutorial again. You can also post for help on the `Cemetech forums <http://cemetech.net/>`_.
 
-*In next lesson we'll dive right into learning assembly.*
+*In the next lesson we'll dive right into learning assembly.*
