@@ -5,7 +5,7 @@ LDIR
 	Load And Increment with Style
 
 **Description**
-	| Performs ``ldi`` until ``BC`` = 0, effectively copies ``BC`` bytes of data from ``HL`` to ``DE``, where ``HL`` and ``DE`` point to the start of their respective blocks.
+	| Performs ``ldi`` until ``BC`` = 0, effectively copying ``BC`` bytes of data from ``HL`` to ``DE``, where ``HL`` and ``DE`` point to the start of their respective blocks.
 	.. codeblock:: asm
 		ldi
 		ret po

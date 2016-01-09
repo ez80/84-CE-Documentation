@@ -5,7 +5,7 @@ CPIR
 	Compare and Increment with Repeat
 
 **Description**
-	| Performs ``cpi`` until either ``A`` = ``(HL)`` is set or ``BC`` = 0.
+	| Performs ``cpi`` until either ``A`` = ``(HL)`` or ``BC`` = 0.
 	.. codeblock:: asm
 		cp a,(hl)
 		inc hl

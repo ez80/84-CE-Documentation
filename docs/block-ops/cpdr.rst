@@ -5,7 +5,7 @@ CPDR
 	Compare and Decrement with Repeat
 
 **Description**
-	| Performs ``cpd`` until either ``A`` = ``(HL)`` is set or ``BC`` = 0.
+	| Performs ``cpd`` until either ``A`` = ``(HL)`` or ``BC`` = 0.
 	.. codeblock:: asm
 		cp a,(hl)
 		dec hl

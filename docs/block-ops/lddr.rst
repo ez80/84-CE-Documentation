@@ -5,7 +5,7 @@ LDDR
 	Compare and Decrement with Repeat
 
 **Description**
-	| Performs ``ldd`` until ``BC`` = 0, effectively copies ``BC`` bytes of data from ``HL`` to ``DE``, where ``HL`` and ``DE`` point to the end of their respective blocks.
+	| Performs ``ldd`` until ``BC`` = 0, effectively copying ``BC`` bytes of data from ``HL`` to ``DE``, where ``HL`` and ``DE`` point to the end of their respective blocks.
 	.. codeblock:: asm
 		ldd
 		ret po
@@ -16,7 +16,8 @@ LDDR
 		- Sprite routines
 		- Copying graphical data from some buffer to the actual screen
 		- Filling lots of space with one (or more) bytes
-			.. codeblock:: asm
+
+		.. codeblock:: asm
 				ld hl,EndOfData
 				ld de,EndOfData-1
 				ld bc,SizeOfData-1
