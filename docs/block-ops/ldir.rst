@@ -5,7 +5,7 @@ LDIR
 	Load And Increment with Style
 
 **Description**
-	| Performs ``cpi`` until either ``A`` = ``(HL)`` flag is set or ``BC`` = 0.
+	| Performs ``ldi`` until ``BC`` = 0, effectively copies ``BC`` bytes of data from ``HL`` to ``DE``, where ``HL`` and ``DE`` point to the start of their respective blocks.
 	.. codeblock:: asm
 		ldi
 		ret po
@@ -41,11 +41,11 @@ LDIR
 	================    ====================================================================================
 
 **Allowed Instructions**
-	================  ================  ===========================================================================================================================================  ==============================  ==============================
-	Instruction       Opcode            CC (ADL/non-ADL)                                                                                                                             CC (.S)                         CC (.L)
-	================  ================  ===========================================================================================================================================  ==============================  ==============================
-	cpir              $ED, $B0          ``2F + (Iterations)*(1R + 2) - 1`` where ``Iterations`` is the number of iterations of ``cpi`` before either ``A`` = ``(HL)`` or ``BC`` = 0  3F + (Iterations)*(1R + 2) - 1  3F + (Iterations)*(1R + 2) - 1
-	================  ================  ===========================================================================================================================================  ==============================  ==============================
+	================  ================  =========================  =========================  =========================
+	Instruction       Opcode            CC (ADL/non-ADL)           CC (.S)                    CC (.L)
+	================  ================  =========================  =========================  =========================
+	ldir              $ED, $B0          2F + (1R + 1W + 1)*``BC``  3F + (1R + 1W + 1)*``BC``  3F + (1R + 1W + 1)*``BC``
+	================  ================  =========================  =========================  =========================
 
 **Notes**
 	- Interrupts can be triggered while this instruction is in progress (unless they are disabled using ``DI``, of course).
@@ -53,4 +53,4 @@ LDIR
 	- If you want to copy a few more bytes than whatever number is in ``BC``, it is both smaller and significantly faster to use ``INC BC`` several times before ``LDIR`` than a few ``LDI``s after it. (``INC BC`` is one byte and only 1F whereas ``LDI`` is two bytes and 2F+1R+1W+1.)
 
 **See Also**
-	`CPIR <cpir.html>`_, `LD </en/latest/ld-ex/docs/ld.html>`_, `LDD <ldd.html>`_, `LDDR <lddr.html>`_, `LDI <ldi.html>`_
+	`CPIR <cpir.html>`_, `LD </en/latest/docs/ld-ex/ld.html>`_, `LDD <ldd.html>`_, `LDDR <lddr.html>`_, `LDI <ldi.html>`_

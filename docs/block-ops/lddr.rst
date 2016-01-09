@@ -5,7 +5,7 @@ LDDR
 	Compare and Decrement with Repeat
 
 **Description**
-	| Performs ``cpd`` until either ``A`` = ``(HL)`` flag is set or ``BC`` = 0.
+	| Performs ``ldd`` until ``BC`` = 0, effectively copies ``BC`` bytes of data from ``HL`` to ``DE``, where ``HL`` and ``DE`` point to the end of their respective blocks.
 	.. codeblock:: asm
 		ldd
 		ret po
