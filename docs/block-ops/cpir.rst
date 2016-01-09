@@ -15,7 +15,7 @@ CPIR
 		jr -10
 
 **Uses**
-	- Finding a certain letter in a string (or other similar tasks).
+	- Finding a certain letter in a string (or other similar tasks)
 
 **Results**
 	================    ==========================================  ========================================
