@@ -6,8 +6,8 @@ LDIR
 
 **Description**
 	| Performs ``ldi`` until ``BC`` = 0, effectively copying ``BC`` bytes of data from ``HL`` to ``DE``, where ``HL`` and ``DE`` point to the start of their respective blocks.
-
 	.. codeblock:: asm
+
 		ldi
 		ret po
 		jr -5
@@ -49,6 +49,7 @@ LDIR
 
 **Examples**
 	.. codeblock:: asm
+
 	; Filling a block of memory with a single byte
 		ld hl,StartOfBlock
 		ld de,StartOfBlock+1
