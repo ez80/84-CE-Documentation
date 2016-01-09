@@ -5,10 +5,10 @@ DAA
 	Decimal Adjust Accumulator
 
 **Description**
-	| Does cool stuff with binary-coded decimal. (Please someone tell me how this works???)
+	| Does cool stuff with binary-coded decimal.
 
 **Uses**
-	- Probably useful for BCD arithmetic, but I'm not sure quite how.
+	- Probably useful for BCD arithmetic?
 
 **Results**
 	================    ==============================================
@@ -37,6 +37,6 @@ DAA
 		- ``NC`` means ``M`` ≥ ``N``
 
 **See Also**
-	`ADD <add.html>`_, `ADC <adc.html>`_, `SBC <sbc.html>`_, `SUB <sub.html>`_
+	`ADD <add.html>`_, `ADC <adc.html>`_, `RLD </en/latest/docs/bit-shifts/rld.html>`_, `RRD </en/latest/docs/bit-shifts/rrd.html>`_, `SBC <sbc.html>`_, `SUB <sub.html>`_
 
 .. _parity: https://en.wikipedia.org/wiki/Parity_bit

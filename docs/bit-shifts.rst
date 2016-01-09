@@ -9,6 +9,7 @@ Bit Shifts
   bit-shifts/rla
   bit-shifts/rlc
   bit-shifts/rlca
+  bit-shifts/rld
   bit-shifts/rr
   bit-shifts/rra
   bit-shifts/rrc
