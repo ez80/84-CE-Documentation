@@ -52,4 +52,4 @@ CP
 		- ``NC`` means ``M`` ≥ ``N``
 
 **See Also**
-	`SUB <adc.html>`_, `SBC <sbc.html>`_, `CPI </en/latest/block-ops/cpi.html>`_, `CPIR </en/latest/block-ops/cpir.html>`_, `CPD </en/latest/block-ops/cpd.html>`_, `CPDR </en/latest/block-ops/cpdr.html>`_
+	`SUB <adc.html>`_, `SBC <sbc.html>`_, `CPI </en/latest/docs/block-ops/cpi.html>`_, `CPIR </en/latest/docs/block-ops/cpir.html>`_, `CPD </en/latest/docs/block-ops/cpd.html>`_, `CPDR </en/latest/docs/block-ops/cpdr.html>`_

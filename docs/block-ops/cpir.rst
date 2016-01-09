@@ -45,4 +45,4 @@ CPIR
 	- Interrupts can be triggered while this instruction is in progress (unless they are disabled using ``DI``, of course).
 
 **See Also**
-	`CP </en/latest/arithmetic/cp.html>`_, `CPD <cpd.html>`_, `CPDR <cpdr.html>`_, `CPI <cpi.html>`_, `LDIR <ldir.html>`_
+	`CP </en/latest/docs/arithmetic/cp.html>`_, `CPD <cpd.html>`_, `CPDR <cpdr.html>`_, `CPI <cpi.html>`_, `LDIR <ldir.html>`_

@@ -42,4 +42,4 @@ CPI
 	- Although this instruction increments ``HL``, it decrements ``BC``.
 
 **See Also**
-	`CP </en/latest/arithmetic/cp.html>`_, `CPD <cpd.html>`_, `CPDR <cpdr.html>`_, `CPIR <cpir.html>`_, `LDI <ldi.html>`_
+	`CP </en/latest/docs/arithmetic/cp.html>`_, `CPD <cpd.html>`_, `CPDR <cpdr.html>`_, `CPIR <cpir.html>`_, `LDI <ldi.html>`_

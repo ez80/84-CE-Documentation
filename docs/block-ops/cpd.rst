@@ -39,4 +39,4 @@ CPD
 	================  ================  ================  ================  ================
 
 **See Also**
-	`CP </en/latest/arithmetic/cp.html>`_, `CPDR <cpdr.html>`_, `CPI <cpi.html>`_, `CPIR <cpir.html>`_, `LDD <ldd.html>`_
+	`CP </en/latest/docs/arithmetic/cp.html>`_, `CPDR <cpdr.html>`_, `CPI <cpi.html>`_, `CPIR <cpir.html>`_, `LDD <ldd.html>`_
