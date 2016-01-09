@@ -6,6 +6,7 @@ LDIR
 
 **Description**
 	| Performs ``ldi`` until ``BC`` = 0, effectively copying ``BC`` bytes of data from ``HL`` to ``DE``, where ``HL`` and ``DE`` point to the start of their respective blocks.
+
 	.. code-block:: asm
 		ldi
 		ret po
@@ -47,6 +48,7 @@ LDIR
 	- If you want to copy a few more bytes than whatever number is in ``BC``, it is both smaller and significantly faster to use ``INC BC`` several times before ``LDIR`` than a few ``LDI``s after it. (``INC BC`` is one byte and only 1F whereas ``LDI`` is two bytes and 2F+1R+1W+1.)
 
 **Examples**
+
 	.. code-block:: asm
 		; Filling a block of memory with a single byte
 			ld hl,StartOfData

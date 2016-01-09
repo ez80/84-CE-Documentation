@@ -6,6 +6,7 @@ LDI
 
 **Description**
 	| Copies one byte from ``(HL)`` to ``(DE)``, then increments ``HL``, increments ``DE``, and decrements ``BC``.
+
 	.. code-block:: asm
 		ld (de),(hl) ; Not normally a valid instruction
 		inc hl
