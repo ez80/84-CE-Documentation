@@ -77,7 +77,7 @@ LDIR
 				ld bc,Palette_End-Palette_Start
 				ldir
 
-	- A simple 8bpp rectangle drawing routine
+	- A simple 8bpp rectangle drawing routine (credit: MateoConLechuga)
 
 			.. code-block:: asm
 
