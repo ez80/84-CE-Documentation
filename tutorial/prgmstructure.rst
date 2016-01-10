@@ -5,9 +5,7 @@ Every program in assembly follows a specific format.
 
 .. code-block:: asm
 
- .nolist
  #include "includes\ti84pce.inc"
- .list
  .assume ADL=1
  .org userMem-2
   .db tExtTok,tAsm84CeCmp
@@ -20,11 +18,9 @@ But what does all of this code do?
 
 .. code-block:: asm
 
- .nolist
  #include "includes\ti84pce.inc"
- .list
 
-This is a file that includes lots of locations of routines and variables and various other things in the calculator's operating system that we can use. The ``.nolist`` and ``.list`` tell the compiler not to write down all of those memory locations in the listing file, which is a very useful debugging tool we will discuss later on.
+This is a file that includes lots of locations of routines and variables and various other things in the calculator's operating system that we can use.
 
 
 .. code-block:: asm
