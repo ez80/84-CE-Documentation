@@ -46,8 +46,8 @@ LDDR
 **Notes**
 	- Interrupts can be triggered while this instruction is in progress (unless they are disabled using ``DI``, of course).
 	- Since most of the time it's more convenient to specify the beginning of a block of data than the end, ``LDIR`` is significantly more popular than ``LDDR``.
-	- Assuming you are copying hard-coded data and BC is NOT already set to the desired number of bytes, it is only faster to use hard-coded ``LDD``s instead of ``ld bc,BytesToCopy \ lddr`` if you are copying two bytes. Copying three bytes, the cycle times and size of the code are exactly the same (6 bytes, 6F+3R+3W+3).
-	- If you want to copy a few more bytes than whatever number is in ``BC``, it is both smaller and significantly faster to use ``INC BC`` several times than ``LDD``. (``INC BC`` is one byte and only 1F whereas ``LDD`` is two bytes and 2F+1R+1W+1.)
+	- Assuming you are copying hard-coded data and BC is NOT already set to the desired number of bytes, it is only faster to use hard-coded ``LDD`` s instead of ``ld bc,BytesToCopy \ lddr`` if you are copying two bytes. Copying three bytes, the cycle times and size of the code are exactly the same (6 bytes, 6F+3R+3W+3).
+	- If you want to copy a few more bytes than whatever number is in ``BC``, it is both smaller and significantly faster to use ``INC BC`` several times before ``LDDR`` than a few ``LDD`` s after it. (``INC BC`` is one byte and only 1F (plus the extra 1R + 1W + 1 from ``LDDR``) whereas ``LDD`` is two bytes and 2F+1R+1W+1. So you just save one byte and 1F.)
 
 **Examples**
 	- Filling a block of memory with a single byte
