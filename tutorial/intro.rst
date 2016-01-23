@@ -20,9 +20,9 @@ To write your program, you can use almost any text editor. We prefer Notepad++, 
 | Download Here: `Notepad++ <https://notepad-plus-plus.org/download/>`_
 | Syntax Highlighting: `Notepad++ eZ80 Syntax Highlighting <http://cemete.ch/p243171>`_
 
-A compiler
+An assembler
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-A compiler lets you take the code you have created and make it into a program that the TI-84 Plus CE can use. We recommend SPASM-ng when coding in eZ80.
+An assembler lets you take the code you have created and make it into a program that the TI-84 Plus CE can use. We recommend SPASM-ng when coding in eZ80.
 
 Download Here: `Spasm-ng <https://github.com/alberthdev/spasm-ng/releases>`_
 
@@ -38,7 +38,7 @@ This file tells your program and the compiler where things are located on your c
 
 Download Here: `ti84pce.inc <http://wikiti.brandonw.net/index.php?title=84PCE:OS:Include_File>`_
 
-Setting up the compiler
+Setting up the assembler
 --------------------------------------------------
 Alright, now we can get to putting together all the materials we just downloaded!
 Create a folder and call it "My First ASM Program" (or anything else). Inside create three folders: ``bin``, ``includes``, and ``tools``. Rename ``SPASM`` to just ``spasm.exe`` and put it inside the folder named tools. Put ti84pce.inc inside the includes folder.
@@ -47,22 +47,23 @@ Create a file named ``Example.asm`` in your folder. Inside this file, write the 
 
 .. code-block:: asm
 
- .nolist
- #include "includes\ti84pce.inc"
- .list
+#include "includes\ti84pce.inc"
+
  .assume ADL=1
  .org userMem-2
-	.db tExtTok,tAsm84CeCmp
-	call _homeup
-	call _ClrScrnFull
-	ld hl,TutorialText
-	call _PutS
-	call _GetKey
-	call _ClrScrnFull
-	res donePrgm,(iy+doneFlags)
-	ret
+ .db tExtTok,tAsm84CeCmp
+
+ call _homeup
+ call _ClrScrnFull
+ ld hl,TutorialText
+ call _PutS
+ call _GetKey
+ call _ClrScrnFull
+ res donePrgm,(iy+doneFlags)
+ ret
+ 
  TutorialText:
-	.db "Excellent job! :) You have created your first assembly program!",0
+  .db "Excellent job! :) You have created your first assembly program!",0
 
 *Don't worry; we'll revisit what all this code does later on.*
 
