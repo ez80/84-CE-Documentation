@@ -46,24 +46,24 @@ Create a folder and call it "My First ASM Program" (or anything else). Inside cr
 Create a file named ``Example.asm`` in your folder. Inside this file, write the following code.
 
 .. code-block:: asm
+ 
+ #include "includes\ti84pce.inc"
+ 
+  .assume ADL=1
+  .org userMem-2
+  .db tExtTok,tAsm84CeCmp
 
-#include "includes\ti84pce.inc"
-
- .assume ADL=1
- .org userMem-2
- .db tExtTok,tAsm84CeCmp
-
- call _homeup
- call _ClrScrnFull
- ld hl,TutorialText
- call _PutS
- call _GetKey
- call _ClrScrnFull
- res donePrgm,(iy+doneFlags)
- ret
+  call _homeup
+  call _ClrScrnFull
+  ld hl,TutorialText
+  call _PutS
+  call _GetKey
+  call _ClrScrnFull
+  res donePrgm,(iy+doneFlags)
+  ret
  
  TutorialText:
-  .db "Excellent job! :) You have created your first assembly program!",0
+   .db "Excellent job! :) You have created your first assembly program!",0
 
 *Don't worry; we'll revisit what all this code does later on.*
 
