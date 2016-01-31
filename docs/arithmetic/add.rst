@@ -54,10 +54,10 @@ ADD
 	add ix,de         $DD, $1A          2F                3F                3F
 	add ix,ix         $DD, $2A          2F                3F                3F
 	add ix,sp         $DD, $3A          2F                3F                3F
-	add iy,bc         $ED, $0A          2F                3F                3F
-	add iy,de         $ED, $1A          2F                3F                3F
-	add iy,iy         $ED, $2A          2F                3F                3F
-	add iy,sp         $ED, $3A          2F                3F                3F
+	add iy,bc         $FD, $0A          2F                3F                3F
+	add iy,de         $FD, $1A          2F                3F                3F
+	add iy,iy         $FD, $2A          2F                3F                3F
+	add iy,sp         $FD, $3A          2F                3F                3F
 	================  ================  ================  ================  ================
 
 **Notes**
