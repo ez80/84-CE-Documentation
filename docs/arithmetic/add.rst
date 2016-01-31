@@ -46,11 +46,11 @@ ADD
 	add a,(ix+n)      $DD, $86, n       3F + 1R           4F + 1R           4F + 1R
 	add a,(iy+n)      $FD, $86, n       3F + 1R           4F + 1R           4F + 1R
 	add a,n           $C6, n            2F                X                 X
-	add hl,bc         $ED, $0A          2F                3F                3F
-	add hl,de         $ED, $1A          2F                3F                3F
-	add hl,hl         $ED, $2A          2F                3F                3F
-	add hl,sp         $ED, $3A          2F                3F                3F
-	add ix,bc         $DD, $0A          2F                3F                3F
+	add hl,bc         $0A               1F                2F                2F
+	add hl,de         $1A               1F                2F                2F
+	add hl,hl         $2A               1F                2F                2F
+	add hl,sp         $3A               1F                2F                2F
+	add ix,bc         $DD, $0A          2F                3F                2F
 	add ix,de         $DD, $1A          2F                3F                3F
 	add ix,ix         $DD, $2A          2F                3F                3F
 	add ix,sp         $DD, $3A          2F                3F                3F
