@@ -2,7 +2,7 @@ LDDR
 --------
 
 **LDDR**
-	Compare and Decrement with Repeat
+	Load and Decrement with Repeat
 
 **Description**
 	| Performs ``ldd`` until ``BC`` = 0, effectively copying ``BC`` bytes of data from ``HL`` to ``DE``, where ``HL`` and ``DE`` point to the end of their respective blocks.
