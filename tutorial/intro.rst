@@ -63,7 +63,7 @@ Create a file named ``Example.asm`` in your folder. Inside this file, write the 
   ret
  
  TutorialText:
-   .db "Excellent job! :) You have created your first assembly program!",0
+   .db "Excellent job! :) You havecreated your first assembly program!",0
 
 *Don't worry; we'll revisit what all this code does later on.*
 
