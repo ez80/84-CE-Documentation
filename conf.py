@@ -51,7 +51,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'eZ80 Heaven'
-copyright = '2015, KingInfinity and HactarCE'
+copyright = '2016, KingInfinity and HactarCE'
 author = 'KingInfinity and HactarCE'
 
 # The version info for the project you're documenting, acts as replacement for
