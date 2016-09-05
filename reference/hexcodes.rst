@@ -130,19 +130,6 @@ This fills the LCD with white pixels
  
 Run Indicator
 --------------------
-Off
-__________________________
-This turns off the run indicator.
-
-.. code-block:: asm
-
- CD480802C9
-
-.. code-block:: asm
-
- call _RunIndicOff
- ret
- 
 On
 __________________________
 This turns on the run indicator.
@@ -155,5 +142,18 @@ This turns on the run indicator.
 
  call _RunIndicOn
  ret 
+ 
+Off
+__________________________
+This turns off the run indicator.
+
+.. code-block:: asm
+
+ CD480802C9
+
+.. code-block:: asm
+
+ call _RunIndicOff
+ ret
  
 Hexcode descriptions originally from `TI-BD <http://tibasicdev.wikidot.com/hexcodes>`_. 
