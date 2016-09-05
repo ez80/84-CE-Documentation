@@ -73,7 +73,7 @@ This only clears the LCD, it doesn't actually clear the graph screen or homescre
 
 .. code-block:: asm
 
- CD101A02C9
+ CD080802C9
 
 .. code-block:: asm
 
