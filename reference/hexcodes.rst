@@ -64,5 +64,21 @@ This will switch from normal text mode to inverse (white text on black backgroun
   xor 1&lt;&lt;textInverse
   ld (iy+textFlags),a
   ret
+
+ 
+LCD Clear
+--------------------
+
+This only clears the LCD, it doesn't actually clear the graph screen or homescreen
+
+.. code-block:: asm
+
+ CD101A02C9
+
+.. code-block:: asm
+
+ call _ClrLCDFull
+ ret
+ 
  
 Hexcode descriptions originally from `TI-BD <http://tibasicdev.wikidot.com/hexcodes>`_. 
