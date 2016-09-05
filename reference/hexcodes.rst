@@ -80,6 +80,22 @@ This only clears the LCD, it doesn't actually clear the graph screen or homescre
  call _ClrLCDFull
  ret
  
+Fill Color
+__________________________
+This fills the LCD with pixels of the color you specify. Replace XX with the palettized color, list of available colors here: http://ce-programming.github.io/documentation/images/tutorials/asm/rgbhlpalette.png.
+
+.. code-block:: asm
+
+ 3EXX210000D401005802CDE01002C9
+
+.. code-block:: asm
+
+ ld a,$XX
+ ld hl,vRam
+ ld bc,320*240*2
+ call _MemSet
+ ret
+ 
 Black
 __________________________
 This fills the LCD with black pixels
@@ -91,6 +107,22 @@ This fills the LCD with black pixels
 .. code-block:: asm
 
  ld a,$00
+ ld hl,vRam
+ ld bc,320*240*2
+ call _MemSet
+ ret
+
+White
+__________________________
+This fills the LCD with white pixels
+
+.. code-block:: asm
+
+ 3EFF210000D401005802CDE01002C9
+
+.. code-block:: asm
+
+ ld a,$FF
  ld hl,vRam
  ld bc,320*240*2
  call _MemSet
