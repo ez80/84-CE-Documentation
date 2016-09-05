@@ -128,4 +128,32 @@ This fills the LCD with white pixels
  call _MemSet
  ret
  
+Run Indicator
+--------------------
+Off
+__________________________
+This turns off the run indicator.
+
+.. code-block:: asm
+
+ CD480802C9
+
+.. code-block:: asm
+
+ call _RunIndicOff
+ ret
+ 
+On
+__________________________
+This turns on the run indicator.
+
+.. code-block:: asm
+
+ CD440802C9
+
+.. code-block:: asm
+
+ call _RunIndicOn
+ ret 
+ 
 Hexcode descriptions originally from `TI-BD <http://tibasicdev.wikidot.com/hexcodes>`_. 
