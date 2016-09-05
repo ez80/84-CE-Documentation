@@ -1,5 +1,5 @@
 Hexcodes
-================================
+******************************
 
 What are hex codes?
 --------------------
@@ -65,7 +65,8 @@ This will switch from normal text mode to inverse (white text on black backgroun
   ld (iy+textFlags),a
   ret
 
- 
+LCD
+______________
 LCD Clear
 --------------------
 
@@ -80,5 +81,21 @@ This only clears the LCD, it doesn't actually clear the graph screen or homescre
  call _ClrLCDFull
  ret
  
+Black
+--------------------
+
+This fills the LCD with black pixels
+
+.. code-block:: asm
+
+ 3E00210000D401005802CDE01002C9
+
+.. code-block:: asm
+
+ ld a,$00
+ ld hl,vRam
+ ld bc,320*240*2
+ call _MemSet
+ ret
  
 Hexcode descriptions originally from `TI-BD <http://tibasicdev.wikidot.com/hexcodes>`_. 
