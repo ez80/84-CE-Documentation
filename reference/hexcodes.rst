@@ -1,5 +1,5 @@
 Hexcodes
-******************************
+==========================
 
 What are hex codes?
 --------------------
@@ -15,8 +15,7 @@ Each hex code will have the program and the source in assembly, along with a bri
 
 **Make sure you have the FULL, correct hexcode. These programs can clear your ram if not entered correctly!**
 
-Toggle Program Mode
---------------------
+### Toggle Program Mode
 
 When used in a program, it allows you to use Archive and UnArchive on other programs. Make sure to switch back to "program mode" when you're done by running the program again.
 When used on the home screen, it allows you to use programming commands like If and For(; this has limited utility, but maybe it's useful to check a short bit of code without creating a new program for it.
@@ -32,8 +31,7 @@ When used on the home screen, it allows you to use programming commands like If 
   ld (iy+8),a
   ret
  
-Quick Key
---------------------
+### Quick Key
 
 This is a getKey routine that makes all keys repeat, not just arrows and there is no delay between repeats. The key codes are different, so you might need to experiment.
 
@@ -49,8 +47,7 @@ This is a getKey routine that makes all keys repeat, not just arrows and there i
   ret
  
  
-Text Inverse
---------------------
+### Text Inverse
 
 This will switch from normal text mode to inverse (white text on black background) and vice versa.
 
@@ -66,9 +63,9 @@ This will switch from normal text mode to inverse (white text on black backgroun
   ret
 
 LCD
-______________
-LCD Clear
 --------------------
+
+### LCD Clear
 
 This only clears the LCD, it doesn't actually clear the graph screen or homescreen
 
@@ -81,8 +78,7 @@ This only clears the LCD, it doesn't actually clear the graph screen or homescre
  call _ClrLCDFull
  ret
  
-Black
---------------------
+### Black
 
 This fills the LCD with black pixels
 
