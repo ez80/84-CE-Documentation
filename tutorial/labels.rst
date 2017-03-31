@@ -1,7 +1,7 @@
 Labels
 ================================
 
-Labels consist of an identifier (or symbol) followed by a colon (:). The identifier can contain numbers, letters, and ``_``, but cannot start with a number. Labels must be defined only once.
+Labels consist of an identifier (or symbol) followed by a colon ``:``. The identifier can contain numbers, letters, and underscores ``_``, but cannot start with a number. Labels must be defined only once.
 
 When a program is compiled, each label is replaced with a 24bit address. A label can be used to identify a string of data, a location to jump to, or a subroutine to call.
 
