@@ -26,11 +26,11 @@ From the example program:
  TutorialText:
   .db "Excellent job! :) You havecreated your first assembly program!",0
   
-The label ``TutorialText`` is used to store the location of the string. Meaning: the address of the start of the string is stored in ``TutorialText``.
+The label ``TutorialText`` is used to store the location of the start of the string. (the 24bit address of the start of the string is stored in ``TutorialText``)
 
 .. code-block:: 
 
   ld hl,TutorialText
   call _PutS
   
-Here, the label ``TutorialText`` is loaded into hl (the address of the start of the string) and ```call _PutS``` displays the string located at the address in hl.
+Here, the label ``TutorialText`` is loaded into hl (the address of the start of the string) and ``call _PutS`` displays the string located at the address in hl.
