@@ -1,9 +1,9 @@
 Labels
 ================================
 
-Labels consist of an identifier (or symbol) followed by a colon (:). Labels must be defined only once.
+Labels consist of an identifier (or symbol) followed by a colon (:). The identifier can contain numbers, letters, and ``_``, but cannot start with a number. Labels must be defined only once.
 
-When compiled, a label is compiled into a 24bit address. A label can be used to store a string of data, a location to jump to, or a subroutine to call.
+When a program is compiled, each label is replaced with a 24bit address. A label can be used to identify a string of data, a location to jump to, or a subroutine to call.
 
 From the example program:
 
@@ -26,11 +26,11 @@ From the example program:
  TutorialText:
   .db "Excellent job! :) You havecreated your first assembly program!",0
   
-The label ``TutorialText`` is used to store the location of the start of the string. (the 24bit address of the start of the string is stored in ``TutorialText``)
+The label ``TutorialText`` is used by the compiler to store the location of the start of the string. (``TutorialText`` now refers to the 24bit address of the start of the string.)
 
 .. code-block:: 
 
   ld hl,TutorialText
   call _PutS
   
-Here, the label ``TutorialText`` is loaded into hl (the address of the start of the string) and ``call _PutS`` displays the string located at the address in hl.
+Here, the value of the label ``TutorialText`` is loaded into hl (the address of the start of the string) and ``call _PutS`` displays the string located at the address in hl. ``_PutS`` itself is also a label (defined in ``ti84pce.inc``) that refers to the address of a subroutine built into TI-OS.
