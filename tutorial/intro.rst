@@ -28,9 +28,12 @@ Download Here: `Spasm-ng <https://github.com/alberthdev/spasm-ng/releases>`_
 
 A debugger/emulator or a TI-84+CE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-A debugger is useful for seeing what your code does and finding errors. Unfortunately, at the time of this writing, the only 84+CE emulator available for download is CEmu, which is hardly in a usable state. Because of this, we need TI's Connect software to transfer our programs to our calculator, and we'll also need a link cable (which should have come with your calculator) and the calculator itself.
+A debugger is useful for seeing what your code does and finding errors. The only 84+CE emulator available for download is CEmu. We can use CEmu to debug while we use TI's Connect software to transfer our programs to our calculator. To transfer, we'll also need a link cable (which should have come with your calculator) and the calculator itself.
 
 Download Here: `TI Connect CE <https://education.ti.com/en/us/software/details/en/CA9C74CAD02440A69FDC7189D7E1B6C2/swticonnectcesoftware>`_
+
+CEmu: `CEmu
+<https://ce-programming.github.io/CEmu/>`
 
 TI 84+CE Equates File
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
