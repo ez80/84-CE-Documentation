@@ -29,6 +29,8 @@ In base 10, each digit is ten times as significant as the next. For example, a s
 So how can we use this information to go from a binary number to a decimal number? We make a chart!
 
 ======  ======  ======  ======  ======  ======  ======
+Power   2^5     2^4     2^3     2^2     2^1     2^0
+======  ======  ======  ======  ======  ======  ======
 Place   32's    16's    8's     4's     2's     1's
 ======  ======  ======  ======  ======  ======  ======
 Digit   1       0       1       0       1       0
@@ -51,16 +53,18 @@ But wait! In decimal, we had ten digits. Binary had two. Hexadecimal needs... si
 Let's use another chart to convert from hexadecimal to decimal.
 
 ======  =======  ======  ======  ======
-Place   16384's  256's   16's    1's
+Power   16^3     16^2    16^1    16^0
+======  =======  ======  ======  ======
+Place   4096's   256's   16's    1's
 ======  =======  ======  ======  ======
 Digit   9        9       2       C
 ======  =======  ======  ======  ======
 Just like with binary numbers, we multiply down and add across. We just have to remember that letters A-F correspond to the numbers 10-15.
 
-| There is a C in the 1s place, so we multiple 1 times 12 (C = 12). The result is 12.
-| There is a 2 in the 16s place, so we multiple 2 times 16. The result is 32.
-| There is a 9 in the 256s place, so we multiple 2 times 16. The result is 2304.
-| There is a 9 in the 65536s place, so we multiple 2 times 16. The result is 36864.
+| There is a C in the 1's place, so we multiple 1 times 12 (C = 12). The result is 12.
+| There is a 2 in the 16's place, so we multiple 2 times 16. The result is 32.
+| There is a 9 in the 256's place, so we multiple 9 times 256. The result is 2304.
+| There is a 9 in the 4096's place, so we multiple 9 times 4096. The result is 36864.
 
 36864 + 2304 + 32 + 12 = 39212. That was a very large number. If we were to write it out in binary it would be %1001100100101100. Ick. Hexadecimal makes things a lot cleaner. And the best part is that every four digits in binary is equal to EXACTLY one hexadecimal digit! So if you split up that icky binary string into sections of four (%1001 %1001 %0010 %1100) every little section corresponds with one of the digits of the hexadecimal string. This makes converting between binary and hexadecimal much easier if you just memorize which 4-digit binary numbers go with which hexadecimal digits.
 
