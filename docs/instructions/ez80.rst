@@ -1,0 +1,7 @@
+Instructions
+--------
+
+**Read The Manual**
+    Zilog has an `official eZ80 manual <https://zilog.com/appnotes_download.php?FromPage=DocTree&dn=UM0077&ft=User%20Manual&f=YUhSMGNEb3ZMM2QzZHk1NmFXeHZaeTVqYjIwdlpHOWpjeTlWVFRBd056Y3VjR1Jt`_
+    
+    This manual documents most instructions necessary.
