@@ -5,7 +5,7 @@ You want more games for your shiny new TI-84+CE? Why don't you make them yoursel
 What is assembly?
 =================================================
 Assembly is a very powerful language that you can use on your TI-84+CE! When you write in assembly, you write in a human readable form of machine code, which allows you to create quicker programs that can access and do more than TI-BASIC.
-Mistakes in assembly can be messier than in TI-BASIC- but usually only as severe as a ram clear, so before you start this guide, back up your calculator to prevent any data loss!
+Mistakes in assembly can be messier than in TI-BASIC - but usually only as severe as a ram clear, so before you start this guide, back up your calculator to prevent any data loss!
 
 Setting up
 =================================================
@@ -15,10 +15,13 @@ What you'll need
 
 A program editor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-To write your program, you can use almost any text editor. We prefer Notepad++, as it is really easy to use for beginners and it has some nice features for developing.
+To write your program, you can use almost any text editor.
+On Windows Notepad++ can be used, as it is really easy to use for beginners and it has some nice features for developing.
 
 | Download Here: `Notepad++ <https://notepad-plus-plus.org/download/>`_
 | Syntax Highlighting: `Notepad++ eZ80 Syntax Highlighting <http://cemete.ch/p243171>`_
+
+On other OSes, use whatever IDE or text editor you are most familiar with.
 
 An assembler
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
