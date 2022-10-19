@@ -18,7 +18,7 @@ For numbers greater than 99, the highest two-digit number, we use three digits.
 
 - 256
 
-The digit on the right now tells you how many "hundreds" there are (one hundred being the next power of ten), and the middle digit tells you how many "tens" there are, etc. So we can say that a three-digit number is equal to ``( 100 * digit on the left ) + ( 10 * digit in the middle ) + digit on the right
+The digit on the right now tells you how many "hundreds" there are (one hundred being the next power of ten), and the middle digit tells you how many "tens" there are, etc. So we can say that a three-digit number is equal to ``( 100 * digit on the left ) + ( 10 * digit in the middle ) + digit on the right``.
 
 I'm sure you can see the pattern by now.
 
