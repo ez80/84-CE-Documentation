@@ -25,7 +25,7 @@ On other OSes, use whatever IDE or text editor you are most familiar with.
 
 An assembler
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-An assembler lets you take the code you have created and make it into a program that the TI-84 Plus CE can use. We recommend SPASM-ng when coding in eZ80.
+An assembler lets you take the code you have created and make it into a program that the TI-84+CE can use. We recommend SPASM-ng when coding in eZ80.
 
 Download Here: `Spasm-ng <https://github.com/alberthdev/spasm-ng/releases>`_
 
